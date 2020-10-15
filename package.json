@@ -1,0 +1,26 @@
+{
+  "name": "leanvaluetree.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  },
+  "scripts": {
+    "test": "exit 0",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leanvaluetree/leanvaluetree.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leanvaluetree/leanvaluetree.github.io/issues"
+  },
+  "homepage": "https://github.com/leanvaluetree/leanvaluetree.github.io#readme"
+}
