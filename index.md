@@ -3,8 +3,6 @@ layout: layouts/base.njk
 title: Lean Value Tree
 ---
 
-{# {{tools | json}} #}
-
 {%- for tool in tools -%}
 <div>
   <a href="/tools{{ tool.url }}">
