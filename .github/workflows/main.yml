@@ -1,6 +1,6 @@
 # https://dev.to/sophiabrandt/how-to-deploy-eleventy-to-github-pages-with-github-actions-0
 
-name: Build Eleventy
+name: build
 
 on:
   push:
