@@ -1,13 +1,10 @@
 # https://dev.to/sophiabrandt/how-to-deploy-eleventy-to-github-pages-with-github-actions-0
 
-name: build
-
+name: build eleventy
 on:
   push:
-    paths-ignore:
-      - '.github/**'
-      - '.vscode/**'
-      
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-20.04
