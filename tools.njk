@@ -7,7 +7,35 @@ pagination:
 permalink: tools/{{ tool.url }}
 ---
 
-<h2 class="title display-2">{{ tool["Nome tool"] }}</h2>
-<div class="post-content">
-  {{ tool['Descrizione di massima'] | safe }}
-</div>
+<h2 class="title display-2">
+  {{ tool["Nome tool"] }}
+</h2>
+
+<h2 class="title mt-5">
+  Descrizione di massima
+</h2>
+{{ tool['Descrizione di massima'] }}
+<h2 class="title mt-5">
+  Serve a 
+</h2>
+{{ tool['Serve a '] }}
+<h2 class="title mt-5">
+  Fase
+</h2>
+{{ tool['Fase'] }}
+<h2 class="title mt-5">
+  Metriche
+</h2>
+{{ tool['Metriche'] }}
+<h2 class="title mt-5">
+  Cosa serve
+</h2>
+{{ tool['Cosa serve'] }}
+<h2 class="title mt-5">
+  Esempi di tool
+</h2>
+{{ tool['Esempi di tool'] }}
+<h2 class="title mt-5">
+  Storia / esempio
+</h2>
+{{ tool['Storia / esempio'] }}
