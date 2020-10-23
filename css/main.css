@@ -1,0 +1,19 @@
+.hero {
+  font-size: 7rem;
+
+  font-family: Bon Vivant;
+  font-style: normal;
+  font-weight: light;
+  line-height: 105%;
+  
+  text-transform: uppercase;
+  color: #201D25;
+}
+
+.line {
+  display: inline-block;
+  height: 3px;
+  width: 60px;
+  background-color: #201D25;
+  vertical-align: super;
+}
