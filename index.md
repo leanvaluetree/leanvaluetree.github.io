@@ -20,8 +20,7 @@ title: Lean Value Tree
   <span class="ml-3">Feasability</span>
   <span class="ml-3">Viability</span>
   <span class="ml-3">Desirability</span>
-
-  <span class="float-right">WSS</span>
+  <span class="float-right font-bon-vivant"><img src="/images/logo.svg"></span>
 </div>
 
 <div class="pt-5">
