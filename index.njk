@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+title: Lean Value Tree
+---
+
+{%- for tool in collections.tool -%}
+<div>
+  <a href="{{tool.url}}">
+    {{tool.data.title}}
+  </a>
+</div>
+{%- endfor -%}
