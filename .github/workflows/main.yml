@@ -4,8 +4,6 @@ name: Build Eleventy
 
 on:
   push:
-    branches:
-      - main
     paths-ignore:
       - '.github/**'
       - '.vscode/**'
