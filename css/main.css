@@ -1,3 +1,8 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: Bon Vivant;
+
+}
+
 .font-bon-vivant {
   font-family: Bon Vivant;
 }
@@ -31,4 +36,22 @@
 
 .filter-container {
   border-bottom: 1px solid #201D25;
+}
+
+.arrow {
+  display: inline-block;
+  border-top: 2px solid #201D25;
+  box-sizing: border-box;
+  transform: rotate(-45deg);
+  height: 0.7em;
+  width: 0.7em;
+  border-left: 2px solid #201D25;
+}
+
+.sidebar-border {
+  border: 2px solid #201D25;
+}
+.bg-dark {
+  background-color: #201D25;
+  color: white;
 }

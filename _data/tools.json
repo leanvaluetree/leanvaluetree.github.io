@@ -1,194 +1,194 @@
 [
   {
-    "Nome tool": "A/B test",
-    "Descrizione di massima": "L'A/B testing è un esperimento controllato che prendendo in considerazione due varianti dello stesso progetto online determina quale delle due versioni sia più performante secondo una metrica di successo misurabile. ",
-    "": "COST ** SETUP TIME ** RUN TIME *** EVIDENCE STRENGTH ***",
+    "name": "A/B test",
+    "description": "L'A/B testing è un esperimento controllato che prendendo in considerazione due varianti dello stesso progetto online determina quale delle due versioni sia più performante secondo una metrica di successo misurabile. ",
     "Serve a ": "Fare una scelta \"scientifica\" tra due versioni possibili di una pagina/funzione. Essere sicuri che ogni cambiamento su una pagina produca risultati positivi (Misurando l'impatto su metriche come #download, #iscrizioni etc.)",
     "Fase": "Desirability",
     "Metriche": "Visite uniche, Click through rate, conversioni",
     "Cosa serve": "Software per automatizzare A/B test. Esistono anche varianti con composer visivi in cui non serve sviluppare codice.",
     "Esempi di tool": "Instapage, Optimizely, A/B Tasty, Adobe Target",
     "Storia / esempio": "",
-    "url": "/a-b-test/"
+    "url": "/a-b-test/",
+    "active": true
   },
   {
-    "Nome tool": "Button to nowhere",
-    "Descrizione di massima": "Un bottone che introduce una nuova funzionalità. Cliccando sul bottone, il sistema mostrerà all'utente un messaggio del tipo \"page under construction\". È una tecnica per esaminare e capire come gli utenti interagiscono con il prodotto/servizio nel loro ambiente naturale",
-    "": "",
+    "name": "Button to nowhere",
+    "description": "Un bottone che introduce una nuova funzionalità. Cliccando sul bottone, il sistema mostrerà all'utente un messaggio del tipo \"page under construction\". È una tecnica per esaminare e capire come gli utenti interagiscono con il prodotto/servizio nel loro ambiente naturale",
     "Serve a ": "Capire l'interesse degli utenti rispetto ad un contenuto/funzionalità prima di dedicare del tempo a costruirli",
     "Fase": "Desirability",
     "Metriche": "Visite uniche, Click through rate, conversioni",
     "Cosa serve": "Una pagina funzionante in cui inserire il button. Un sistema di tracciamento per misurare l'interesse degli utenti.",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/button-to-nowhere/"
+    "url": "/button-to-nowhere/",
+    "active": false
   },
   {
-    "Nome tool": "Wizard of Oz",
-    "Descrizione di massima": "Chiedi la collaborazione di un essere umano per simulare l'automazione di un'attività che al momento è troppo onerosa da costruire. Per mantenere l'illusione, cerca di costruire l'esperimento in modo che non sia necessaria una risposta in tempo reale per fornire la proposta di valore che state testando.",
-    "": "",
+    "name": "Wizard of Oz",
+    "description": "Chiedi la collaborazione di un essere umano per simulare l'automazione di un'attività che al momento è troppo onerosa da costruire. Per mantenere l'illusione, cerca di costruire l'esperimento in modo che non sia necessaria una risposta in tempo reale per fornire la proposta di valore che state testando.",
     "Serve a ": "Con il Wizard of Oz, si crea l'illusione di un prodotto reale e l'ignaro utente non sarà che i task apparentemente automatizzati sono in reatà gestiti manuealmente. E' un'opportunità per verificare l'interesse su un prodotto, prima di costruirlo, e per capire la reazione degli utenti alla consegna del valore dichiarato.",
     "Fase": "Feasibility, Viability, Desirability",
     "Metriche": "Acquisition, Activation, Customer feedback, Cost",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/wizard-of-oz/"
+    "url": "/wizard-of-oz/",
+    "active": false
   },
   {
-    "Nome tool": "Paper prototyping",
-    "Descrizione di massima": "Sketch un disegno rapido e grezzo di un'interfaccia utente statica o di un modello di un disegno su un pezzo di carta. Considerare l'utilizzo di ritagli per creare un sistema di progettazione di componenti mobili o simulare animazioni e interazioni con la carta piegata.",
-    "": "",
+    "name": "Paper prototyping",
+    "description": "Sketch un disegno rapido e grezzo di un'interfaccia utente statica o di un modello di un disegno su un pezzo di carta. Considerare l'utilizzo di ritagli per creare un sistema di progettazione di componenti mobili o simulare animazioni e interazioni con la carta piegata.",
     "Serve a ": "è uno strumento economico, facile da capire e veloce da usare per chiunque, dentro e fuori dal team, per dimostrare come funziona un prodotto e l'esperienza utente proposta prima di scrivere una sola riga codice. Anche se la prototipazione su carta sembra semplice, può fornire un ottimo, veloce e utile feedback per convalidare velocemente il vostro prodotto.",
     "Fase": "Feasibility",
     "Metriche": "Time to complete task, Customer feedback",
     "Cosa serve": "Carta, penna, forbici, colla",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/paper-prototyping/"
+    "url": "/paper-prototyping/",
+    "active": false
   },
   {
-    "Nome tool": "Clickable prototyping",
-    "Descrizione di massima": "Un prototipo creato collegando tra loro le diverse pagine che compongono le funzionalità di un prodotto. Viene valutata l'efficacia dei flussi di naviazione e si verifica se gli utenti sono in grado di capire come muoversi nel sito/servizio/app per completare l'attività prevista (task)",
-    "": "",
+    "name": "Clickable prototyping",
+    "description": "Un prototipo creato collegando tra loro le diverse pagine che compongono le funzionalità di un prodotto. Viene valutata l'efficacia dei flussi di naviazione e si verifica se gli utenti sono in grado di capire come muoversi nel sito/servizio/app per completare l'attività prevista (task)",
     "Serve a ": "Anche se la creazione di un prototipo cliccabile può richiedere tempo, il risultato sembra un prodotto vero e proprio ed è molto utile per raccogliere feedback spontanei e realistici da parte degli utenti. I prototipi cliccabili sono alla base dei test di usablità.",
     "Fase": "Feasibility",
     "Metriche": "Time to complete task, Deviance from optimal path, Qualitative feedback, Unsaid response (body language)",
     "Cosa serve": "",
     "Esempi di tool": "UXpin, InVision, Proto.io, Adobe XD",
     "Storia / esempio": "",
-    "url": "/clickable-prototyping/"
+    "url": "/clickable-prototyping/",
+    "active": false
   },
   {
-    "Nome tool": "Five seconds test",
-    "Descrizione di massima": "",
-    "": "",
+    "name": "Five seconds test",
+    "description": "",
     "Serve a ": "",
     "Fase": "",
     "Metriche": "",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/five-seconds-test/"
+    "url": "/five-seconds-test/",
+    "active": false
   },
   {
-    "Nome tool": "Interviste one-to-one",
-    "Descrizione di massima": "",
-    "": "",
+    "name": "Interviste one-to-one",
+    "description": "",
     "Serve a ": "",
     "Fase": "",
     "Metriche": "",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/interviste-one-to-one/"
+    "url": "/interviste-one-to-one/",
+    "active": false
   },
   {
-    "Nome tool": "Customer Journey Map",
-    "Descrizione di massima": "",
-    "": "",
+    "name": "Customer Journey Map",
+    "description": "",
     "Serve a ": "",
     "Fase": "",
     "Metriche": "",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/customer-journey-map/"
+    "url": "/customer-journey-map/",
+    "active": false
   },
   {
-    "Nome tool": "User Story mapping",
-    "Descrizione di massima": "",
-    "": "",
+    "name": "User Story mapping",
+    "description": "",
     "Serve a ": "",
     "Fase": "",
     "Metriche": "",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/user-story-mapping/"
+    "url": "/user-story-mapping/",
+    "active": false
   },
   {
-    "Nome tool": "Google Trends",
-    "Descrizione di massima": "",
-    "": "",
+    "name": "Google Trends",
+    "description": "",
     "Serve a ": "",
     "Fase": "",
     "Metriche": "",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/google-trends/"
+    "url": "/google-trends/",
+    "active": false
   },
   {
-    "Nome tool": "Google AdWords",
-    "Descrizione di massima": "",
-    "": "",
+    "name": "Google AdWords",
+    "description": "",
     "Serve a ": "",
     "Fase": "",
     "Metriche": "",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/google-adwords/"
+    "url": "/google-adwords/",
+    "active": false
   },
   {
-    "Nome tool": "5 second test",
-    "Descrizione di massima": "https://fivesecondtest.com/",
-    "": "",
+    "name": "5 second test",
+    "description": "https://fivesecondtest.com/",
     "Serve a ": "",
     "Fase": "",
     "Metriche": "",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/5-second-test/"
+    "url": "/5-second-test/",
+    "active": false
   },
   {
-    "Nome tool": "Valutazione euristica (expert review)",
-    "Descrizione di massima": "",
-    "": "",
+    "name": "Valutazione euristica (expert review)",
+    "description": "",
     "Serve a ": "",
     "Fase": "",
     "Metriche": "",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/valutazione-euristica-(expert-review)/"
+    "url": "/valutazione-euristica-(expert-review)/",
+    "active": false
   },
   {
-    "Nome tool": "Personas",
-    "Descrizione di massima": "",
-    "": "",
+    "name": "Personas",
+    "description": "",
     "Serve a ": "",
     "Fase": "",
     "Metriche": "",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/personas/"
+    "url": "/personas/",
+    "active": false
   },
   {
-    "Nome tool": "Proto-personas",
-    "Descrizione di massima": "",
-    "": "",
+    "name": "Proto-personas",
+    "description": "",
     "Serve a ": "",
     "Fase": "",
     "Metriche": "",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/proto-personas/"
+    "url": "/proto-personas/",
+    "active": false
   },
   {
-    "Nome tool": "Feedback Follow-ups",
-    "Descrizione di massima": "",
-    "": "",
+    "name": "Feedback Follow-ups",
+    "description": "",
     "Serve a ": "",
     "Fase": "",
     "Metriche": "",
     "Cosa serve": "",
     "Esempi di tool": "",
     "Storia / esempio": "",
-    "url": "/feedback-follow-ups/"
+    "url": "/feedback-follow-ups/",
+    "active": false
   }
 ]
