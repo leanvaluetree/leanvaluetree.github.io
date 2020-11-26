@@ -35,7 +35,7 @@ test('usefulness of tool', t => {
   const result = shortcodes.usefulness(tool)
   t.is(result, `
   <div class="usefulness">
-    <h2 class="uppercase">Perfetto se...</h2>
+    <h3 class="uppercase">Perfetto se...</h3>
     <p>
       Voglio essere sicuro che ogni cambiamento introdotto all'interno del mio prodotto/servizio introduca risultati positivi misurabili rispetto alla versione esistente.
     </p>
