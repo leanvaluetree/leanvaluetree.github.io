@@ -8,17 +8,21 @@ test('parses properties of tool', t => {
   const result = shortcodes.properties(tool)
   t.is(result, `
   <div class="properties">
-    <div class="half">
+    <div class="property">
       <div class="property-name">COST</div>
+      <div class="property-count"><div class="filled-circle"></div><div class="filled-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div></div>
     </div>
-    <div class="half">
+    <div class="property">
       <div class="property-name">SETUP TIME</div>
+      <div class="property-count"><div class="filled-circle"></div><div class="filled-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div></div>
     </div>
-    <div class="half">
+    <div class="property">
       <div class="property-name">RUN TIME</div>
+      <div class="property-count"><div class="filled-circle"></div><div class="filled-circle"></div><div class="filled-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div></div>
     </div>
-    <div class="half">
+    <div class="property">
       <div class="property-name">EVIDENCE STRENGTH</div>
+      <div class="property-count"><div class="filled-circle"></div><div class="filled-circle"></div><div class="filled-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div></div>
     </div>
   </div>
   `.trim())
