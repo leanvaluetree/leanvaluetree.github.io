@@ -14,6 +14,9 @@ module.exports = function usefulness (tool) {
   return `
   <div class="usefulness">
     <h2 class="uppercase">Perfetto se...</h2>
+    <p>
+      ${tool['Perfetto se...']}
+    </p>
   </div>
   `.trim()
 }

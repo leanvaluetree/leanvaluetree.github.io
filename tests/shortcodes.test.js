@@ -30,12 +30,15 @@ test('properties of tool', t => {
 
 test('usefulness of tool', t => {
   const tool = {
-    'Perfetto se...': "\"Voglio essere sicuro che ogni cambiamento introdotto all'interno del mio prodotto/servizio introduca risultati positivi misurabili rispetto alla versione esistente.\"  \"Sei indeciso tra due varianti (due messaggi, due concept etc.)\""
+    'Perfetto se...': "Voglio essere sicuro che ogni cambiamento introdotto all'interno del mio prodotto/servizio introduca risultati positivi misurabili rispetto alla versione esistente."
   }
   const result = shortcodes.usefulness(tool)
   t.is(result, `
   <div class="usefulness">
     <h2 class="uppercase">Perfetto se...</h2>
+    <p>
+      Voglio essere sicuro che ogni cambiamento introdotto all'interno del mio prodotto/servizio introduca risultati positivi misurabili rispetto alla versione esistente.
+    </p>
   </div>
   `.trim())
 })
