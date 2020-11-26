@@ -1,7 +1,7 @@
 const test = require('ava')
 const shortcodes = require('../shortcodes')
 
-test('parses properties of tool', t => {
+test('properties of tool', t => {
   const tool = {
     Proprietà: 'COST ** SETUP TIME ** RUN TIME *** EVIDENCE STRENGTH ***'
   }
@@ -24,6 +24,18 @@ test('parses properties of tool', t => {
       <div class="property-name">EVIDENCE STRENGTH</div>
       <div class="property-count"><div class="filled-circle"></div><div class="filled-circle"></div><div class="filled-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div></div>
     </div>
+  </div>
+  `.trim())
+})
+
+test('usefulness of tool', t => {
+  const tool = {
+    'Perfetto se...': "\"Voglio essere sicuro che ogni cambiamento introdotto all'interno del mio prodotto/servizio introduca risultati positivi misurabili rispetto alla versione esistente.\"  \"Sei indeciso tra due varianti (due messaggi, due concept etc.)\""
+  }
+  const result = shortcodes.usefulness(tool)
+  t.is(result, `
+  <div class="usefulness">
+    <h2 class="uppercase">Perfetto se...</h2>
   </div>
   `.trim())
 })

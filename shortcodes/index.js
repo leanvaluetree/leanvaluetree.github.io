@@ -1,4 +1,4 @@
-const properties = require('./properties')
 module.exports = {
-  properties
+  properties: require('./properties'),
+  usefulness: require('./usefulness'),
 }
