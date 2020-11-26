@@ -80,6 +80,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1em;
 }
 
+img {
+  max-width: 100%;
+}
+
 .contain {
   margin-left: auto;
   margin-right: auto;
@@ -112,4 +116,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .empty-circle {
   border: 2px solid black;
+}
+
+.divider {
+  background: black;
+  height: 1px;
+  width: 100%;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
