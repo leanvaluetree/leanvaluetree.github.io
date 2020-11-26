@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "",
-  "dependencies": {},
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "ava": "^3.13.0"
   },
   "scripts": {
-    "test": "exit 0",
+    "test": "ava",
     "build": "NODE_ENV=production eleventy",
+    "generate-tools": "node scripts/generate-tools-from-tsv.js",
     "start": "eleventy --serve"
   },
   "repository": {

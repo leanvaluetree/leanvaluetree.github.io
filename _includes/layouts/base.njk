@@ -13,9 +13,18 @@
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" class="p-2">
     <header class="container pt-5 pb-2">
-      <!-- <h1 class="home display-1"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1> -->
-      <div class="line"></div>
-      <a href="/" class="text-dark">WORKSHOP SECRET SOCIETY</a>
+      {% if  page.url == '/'%}
+        <div class="line"></div>
+        <a href="/" class="text-dark">WORKSHOP SECRET SOCIETY</a>
+      {% else %}
+        <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="1.66667" height="38.3333" transform="matrix(4.37114e-08 1 1 -4.37114e-08 1.66699 9.16602)" fill="#201D25"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 0C9.16634 5.06261 5.06228 9.16667 -0.000326157 9.16667V10.8333C5.98276 10.8333 10.833 5.98309 10.833 0H9.16634Z" fill="#201D25"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 20C9.16634 14.9374 5.06228 10.8333 -0.000326157 10.8333V9.16667C5.98276 9.16667 10.833 14.0169 10.833 20H9.16634Z" fill="#201D25"/>
+        </svg>
+        &nbsp;&nbsp;
+        <a href="/" class="text-dark">Tutti i workshop</a>
+      {% endif %}
     </header>
 
     <main class="container py-5">

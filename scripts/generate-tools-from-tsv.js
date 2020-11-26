@@ -3,20 +3,19 @@ const path = require('path')
 
 async function main () {
   console.log('generate-tools-from-tsv')
-  const tsvContents = await fsp.readFile(path.resolve(__dirname, '_data', 'tools.tsv'), { encoding: 'utf8' })
+  const dataPath = path.resolve(__dirname, '..', '_data')
+  const tsvContents = await fsp.readFile(path.resolve(dataPath, 'tools.tsv'), { encoding: 'utf8' })
   const tsvByLines = tsvContents.split('\n')
   const header = tsvByLines.splice(0, 1)[0]
-  // console.log(tsvByLines)
-  // console.log(header)
   const fields = header.split('\t').map(t => t.replace('\r', ''))
-  // console.log(header, fields)
   const json = tsvByLines
     .map(tsvLineToObject(fields))
     .filter(t => t['Nome tool'])
     .map(addPermalink)
 
-  // console.log(json)
-  await fsp.writeFile(path.resolve(__dirname, '_data', 'tools.json'), JSON.stringify(json, null, 2), { encoding: 'utf8' })
+  console.log(json)
+  await fsp.writeFile(path.resolve(dataPath, 'tools.json'), JSON.stringify(json, null, 2), { encoding: 'utf8' })
+  console.log('successfully saved _data/tools.json')
 }
 
 main()
