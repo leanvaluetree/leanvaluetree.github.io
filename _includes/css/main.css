@@ -1,6 +1,9 @@
 * {box-sizing: border-box;}
 
 body {font-size: 20px;}
+@media all and (max-width: 40em) {
+  body {font-size: 16px;}
+}
 h1, h2, h3, h4, h5, h6 {font-family: Bon Vivant;}
 
 .font-bon-vivant {font-family: Bon Vivant;}

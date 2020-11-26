@@ -3,7 +3,7 @@
   margin-bottom: 5em;
 }
 .tool-title {
-  font-size: 132.08px;
+  font-size: 3em;
   font-family: Bon Vivant;
   font-style: normal;
   font-weight: 700;
@@ -16,7 +16,8 @@
 .contain {
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
 }
 .ovh {
   overflow: hidden;

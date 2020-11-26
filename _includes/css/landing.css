@@ -1,5 +1,5 @@
 .hero {
-  font-size: 7rem;
+  font-size: 6rem;
 
   font-family: Bon Vivant;
   font-style: normal;
@@ -8,4 +8,10 @@
   
   text-transform: uppercase;
   color: #201D25;
+}
+
+@media all and (max-width: 50em) {
+  .hero {
+    font-size: 3rem;
+  }   
 }
