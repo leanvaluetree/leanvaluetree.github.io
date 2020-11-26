@@ -12,6 +12,7 @@ async function main () {
   // console.log(header, fields)
   const json = tsvByLines
     .map(tsvLineToObject(fields))
+    .filter(t => t['Nome tool'])
     .map(addPermalink)
 
   // console.log(json)
