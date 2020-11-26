@@ -1,4 +1,4 @@
-module.exports = function usefulness (tool) {
+module.exports = function todo (tool) {
   return `
   <div class="todo">
     <h3 class="uppercase">To-Do</h3>

@@ -18,15 +18,15 @@
   margin-right: auto;
   width: 600px;
 }
-.properties {
-  /* display: flex; */
-  /* flex-grow: 1; */
-  /* flex: 1; */
+.ovh {
   overflow: hidden;
 }
-.property {
-  width: 50%;
-  float: left;
+.half {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3em;
+  padding: 1em;
 }
 .property-name {
   font-size: 0.7em;

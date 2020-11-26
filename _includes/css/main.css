@@ -40,3 +40,6 @@ img {
 .uppercase {
   text-transform: uppercase;
 }
+.small {
+  font-size: 0.8em;
+}
