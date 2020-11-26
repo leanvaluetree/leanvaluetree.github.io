@@ -16,6 +16,7 @@
     "Difficoltà maggiori": "Identificazione metrica adeguata. Settaggio tool dedicato.",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "\r",
+    "image": "a-b-test.svg",
     "url": "/a-b-test/"
   },
   {
@@ -35,6 +36,7 @@
     "Difficoltà maggiori": "Se intendi testare la comprensione di informazioni complesse, un testo molto lungo o una pagina molto strutturata allora è preferibile un altro tipo di test. ",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "\r",
+    "image": "five-seconds-test.svg",
     "url": "/five-seconds-test/"
   },
   {
@@ -54,6 +56,7 @@
     "Difficoltà maggiori": "Le parole, la posizione e il design (colore e dimensione) usati per il bottone possono influenzare l'esito del test. Una soluzione può essere quella di sperimentare versioni alternative piazzando il bottone in punti diversi dell'interfaccia.  Questo esperimento potrebbe inficiare la credibilità del tuo servizio e ci saranno dei visitatori che potranno sentirsi raggirati dal test. Una buona comunicazione è la chiave per superare questi ostacoli. ",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "Fake door testing\r",
+    "image": "button-to-nowhere.svg",
     "url": "/button-to-nowhere/"
   },
   {
@@ -73,6 +76,7 @@
     "Difficoltà maggiori": "",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "\r",
+    "image": "google-trends.svg",
     "url": "/google-trends/"
   },
   {
@@ -92,11 +96,12 @@
     "Difficoltà maggiori": "Difficilmente il tuo team potrà applicare correttamente il metodo se non ha la possobilità di esere formato/confrontarsi con qualcuno che abbia già esperienze con XP.  Assicurati di avere una persona di business che sia parte attiva del team di sviluppo.",
     "Storia / esempio": "C3",
     "Potrebbe interessarti anche": "SCRUM, Pair Programming, MOB Programming, Kanban\r",
+    "image": "extreme-programming-(xp).svg",
     "url": "/extreme-programming-(xp)/"
   },
   {
     "ID": "6",
-    "Nome tool": "Wizard of Oz ",
+    "Nome tool": "Wizard of Oz",
     "Anche conosciuto come": "Manual-first",
     "Descrizione di massima": "Gli esseri umani possono essere più economici di un'automazione. Con questo esperimento puoi creare l'illusione di un'automazione, dove l'ignaro utente non saprà mai che dei task apparentemente automatizzati sono in realtà gestiti manualmente e che c'è una persona fisica che sta lavorando dietro le quinte per portarli a termine. Per essere credibile cerca di costruire l'esperimento in modo che non sia necessaria una risposta in tempo reale per validare la proposizione di valore che vuoi testare.",
     "Proprietà": "COST * SETUP TIME ** RUN TIME ** EVIDENCE STRENGTH **",
@@ -111,11 +116,12 @@
     "Difficoltà maggiori": "Il Wizard di Oz è uno dei modi più veloci ed efficaci per verificare se le soluzioni proposte creano valore per i clienti. Poiché il test viene eseguito manualmente, è possibile modificare rapidamente la soluzione e testare un gran numero di ipotesi, trovando le soluzioni più efficaci. In base alle ipostesi da verificare, la mole di lavoro umano necessaria potrebbe essere consistente, ma l'obiettivo è tenere i costi generali inferiori a quelli necessari per implementare realmente l'idea.",
     "Storia / esempio": "https://blog.prototypr.io/prototyping-voice-interfaces-with-wizard-of-oz-c3fe4362dd24",
     "Potrebbe interessarti anche": "\r",
-    "url": "/wizard-of-oz-/"
+    "image": "wizard-of-oz.svg",
+    "url": "/wizard-of-oz/"
   },
   {
     "ID": "7",
-    "Nome tool": "Prototipi cliccabile",
+    "Nome tool": "Prototipo cliccabile",
     "Anche conosciuto come": "Digital Prototype, Clickthrough Prototype, Clickable prototype",
     "Descrizione di massima": "Collega le schermate di un prodotto, definisci le aree clicabili e i flussi tra una p agina e l'altra. Anche se la sua creazione richiede del tempo, il risultato sembra un prodotto vero e proprio con una risposta rapida del sistema alle azioni intraprese dall'utente. Solitamente è la base di partenza per un test di usabilità. ",
     "Proprietà": "",
@@ -130,7 +136,8 @@
     "Difficoltà maggiori": "Inizia con un prototipo piccolo, veloce ed economico. Più si va avanti nel  processo, più aumenta la fedeltà di ciò che si sta costruendo e più diventa costoso apportare cambiamenti.  Presentare un prototipo non perfetto, rendendolo in alcuni casi \"brutto\"/incompleto per aiutare le persone a sentirsi a proprio agio nel dare critiche costruttive.",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "\r",
-    "url": "/prototipi-cliccabile/"
+    "image": "prototipo-cliccabile.svg",
+    "url": "/prototipo-cliccabile/"
   },
   {
     "ID": "8",
@@ -149,6 +156,7 @@
     "Difficoltà maggiori": "",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "\r",
+    "image": "test-di-usabilità.svg",
     "url": "/test-di-usabilità/"
   }
 ]

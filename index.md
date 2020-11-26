@@ -30,7 +30,7 @@ title: Lean Value Tree
     {%- for tool in tools -%}
       <a class="col-md-6 text-black py-2 mt-5" href="/tools{{tool.url}}">
         <div class="card border-0">
-          <img src="/images/a-b-test.svg" class="card-img-top" alt="...">
+          <img src="/images/{{tool.image}}" class="card-img-top" alt="...">
           <div class="card-body">
             <h4 class="card-title">{{tool['Nome tool']}}</h4>
             <p class="card-text">{{tool['Descrizione di massima']}}</p>

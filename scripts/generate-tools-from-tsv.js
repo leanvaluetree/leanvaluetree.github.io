@@ -32,6 +32,7 @@ function tsvLineToObject (fields) {
 function addPermalink (tool) {
   return {
     ...tool,
-    url: '/' + tool['Nome tool'].toLowerCase().replace(/\s/gi, '-').replace(/\//gi, '-') + '/'
+    image: tool['Nome tool'].toLowerCase().trim().replace(/\s/gi, '-').replace(/\//gi, '-') + '.svg',
+    url: '/' + tool['Nome tool'].toLowerCase().trim().replace(/\s/gi, '-').replace(/\//gi, '-') + '/'
   }
 }
