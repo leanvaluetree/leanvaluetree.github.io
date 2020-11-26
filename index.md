@@ -28,13 +28,14 @@ title: Lean Value Tree
   <div class="pt-5">
   <div class="row">
     {%- for tool in tools -%}
-      <a class="col-md-6 text-black py-2" href="/tools{{tool.url}}">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1585309370118-f40f3fce2f1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=50" class="card-img-top" alt="...">
+      <a class="col-md-6 text-black py-2 mt-5" href="/tools{{tool.url}}">
+        <div class="card border-0">
+          <img src="/images/a-b-test.svg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">{{tool['Nome tool']}}</h5>
+            <h4 class="card-title">{{tool['Nome tool']}}</h4>
             <p class="card-text">{{tool['Descrizione di massima']}}</p>
             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <br/>
           </div>
         </div>
       </a>
