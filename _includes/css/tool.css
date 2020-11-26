@@ -1,0 +1,56 @@
+.tool-image {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.tool-title {
+  font-size: 132.08px;
+  font-family: Bon Vivant;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 105%;
+  text-transform: uppercase;
+  color: #201D25;
+  margin-bottom: 1em;
+}
+
+.contain {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+.properties {
+  /* display: flex; */
+  /* flex-grow: 1; */
+  /* flex: 1; */
+  overflow: hidden;
+}
+.property {
+  width: 50%;
+  float: left;
+}
+.property-name {
+  font-size: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.filled-circle, .empty-circle {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin-right: 0.25em;
+}
+.filled-circle {
+  background: black;
+}
+.empty-circle {
+  border: 2px solid black;
+}
+
+.divider {
+  background: black;
+  height: 1px;
+  width: 100%;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
