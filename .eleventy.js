@@ -24,8 +24,9 @@ module.exports = function(eleventyConfig) {
     return styles
   })
 
-  eleventyConfig.addShortcode('properties', shortcodes.properties)
-  eleventyConfig.addShortcode('usefulness', shortcodes.usefulness)
+  Object.keys(shortcodes).forEach(s => {
+    eleventyConfig.addShortcode(s, shortcodes[s])
+  })
 
   eleventyConfig.addShortcode('test', function(tool) {
     return `

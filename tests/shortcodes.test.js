@@ -42,3 +42,18 @@ test('usefulness of tool', t => {
   </div>
   `.trim())
 })
+
+test('todo of tool', t => {
+  const tool = {
+    'To-do': '1. Identifica la metrica che vuoi monitorare\\n  2. Scegli il tool che più si adatta alle tue esigenze\\n  3. Configura e testa il tool\\n  4. Lancia il tuo A/B test\\n  5. Monitora il test nel tempo\\n  6. Scegli la versione più performante'
+  }
+  const result = shortcodes.todo(tool)
+  t.is(result, `
+  <div class="todo">
+    <h3 class="uppercase">To-Do</h3>
+    <p>
+      1. Identifica la metrica che vuoi monitorare<br/>  2. Scegli il tool che più si adatta alle tue esigenze<br/>  3. Configura e testa il tool<br/>  4. Lancia il tuo A/B test<br/>  5. Monitora il test nel tempo<br/>  6. Scegli la versione più performante
+    </p>
+  </div>
+  `.trim())
+})

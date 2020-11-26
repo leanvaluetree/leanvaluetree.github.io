@@ -25,7 +25,7 @@ main()
 function tsvLineToObject (fields) {
   return line => line
     .split('\t')
-    .map(l => l.replace('\r', ''))
+    // .map(l => l.replace('\r', ''))
     .reduce((acc, curr, index) => ({ ...acc, [fields[index]]: curr }), {})
 }
 
