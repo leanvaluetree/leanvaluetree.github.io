@@ -25,19 +25,17 @@ title: Lean Value Tree
 
 <div class="pt-5">
 <div class="row">
-{%- for tool in tools -%}
-{% if tool.active %}
-<a class="col-md-6 text-black py-2" href="/tools{{tool.url}}">
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1585309370118-f40f3fce2f1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=50" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{tool.name}}</h5>
-      <p class="card-text">{{tool.description}}</p>
-      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-    </div>
-  </div>
-</a>
-{% endif %}
-{%- endfor -%}
+  {%- for tool in tools -%}
+    <a class="col-md-6 text-black py-2" href="/tools{{tool.url}}">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1585309370118-f40f3fce2f1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=50" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{tool['Nome tool']}}</h5>
+          <p class="card-text">{{tool['Descrizione di massima']}}</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+    </a>
+  {%- endfor -%}
 </div>
 </div>

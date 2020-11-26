@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: tools
+  size: 1
+  alias: tool
+permalink: tools/{{ tool.url }}
+---
+
+<h2 class="title display-2">{{ tool["Nome tool"] }}</h2>
+<div class="post-content">
+  {{ tool['Descrizione di massima'] | safe }}
+</div>
