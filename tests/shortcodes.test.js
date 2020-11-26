@@ -82,35 +82,35 @@ test('info of tool', t => {
   t.is(result, `
   <div class="info ovh">
     <div class="half">
-      <div class="small uppercase">Anche conosciuto come</div>
+      <div class="small uppercase mb-small">Anche conosciuto come</div>
       <div class="small">Split Testing, Bucket Testing</div>
     </div>
     <div class="half">
-      <div class="small uppercase">Prerequisiti</div>
+      <div class="small uppercase mb-small">Prerequisiti</div>
       <div class="small">Versione online del prodotto/servizio che vuoi testare.</div>
     </div>
     <div class="half">
-      <div class="small uppercase">Esempi di tool</div>
+      <div class="small uppercase mb-small">Esempi di tool</div>
       <div class="small">Instapage, Optimizely, A/B Tasty, Adobe Target</div>
     </div>
     <div class="half">
-      <div class="small uppercase">Dream team</div>
+      <div class="small uppercase mb-small">Dream team</div>
       <div class="small">Developer, Designer, PO/PM </div>
     </div>
     <div class="half">
-      <div class="small uppercase">Ti serviranno</div>
+      <div class="small uppercase mb-small">Ti serviranno</div>
       <div class="small">Software per automatizzare A/B test. Esistono anche varianti con composer visivi in cui non serve sviluppare codice.</div>
     </div>
     <div class="half">
-      <div class="small uppercase">Metriche</div>
+      <div class="small uppercase mb-small">Metriche</div>
       <div class="small">Visite uniche, click through rate, conversioni (es. numero di download, numero di iscrizioni, etc)</div>
     </div>
     <div class="half">
-      <div class="small uppercase">Difficoltà maggiori</div>
+      <div class="small uppercase mb-small">Difficoltà maggiori</div>
       <div class="small">Identificazione metrica adeguata. Settaggio tool dedicato.</div>
     </div>
     <div class="half">
-      <div class="small uppercase">Fase</div>
+      <div class="small uppercase mb-small">Fase</div>
       <div class="small">Validare la soluzione</div>
     </div>
   </div>

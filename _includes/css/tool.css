@@ -54,3 +54,28 @@
   margin-top: 5em;
   margin-bottom: 5em;
 }
+
+.mb-small {
+  margin-bottom: 0.5em;
+}
+
+.tac {
+  text-align: center;
+}
+
+.help-container {
+  background-color: #201D25; 
+  color: #FBF7FD;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  margin-top: 8em;
+}
+
+.contact-experts {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 1em 2em;
+  margin-top: 2em;
+  font-size: 0.8em;
+  color: white;
+}

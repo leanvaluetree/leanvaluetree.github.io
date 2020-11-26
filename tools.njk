@@ -7,23 +7,30 @@ pagination:
 permalink: tools/{{ tool.url }}
 ---
 
-<h2 class="tool-title">{{ tool["Nome tool"] }}</h2>
-<div class="contain">
-  {{ tool['Descrizione di massima'] | safe }}
+<div class="container">
+  <h2 class="tool-title">{{ tool["Nome tool"] }}</h2>
+  <div class="contain">
+    {{ tool['Descrizione di massima'] | safe }}
 
-  <img class="tool-image" src="/images/a-b-test.svg" />
+    <img class="tool-image" src="/images/a-b-test.svg" />
 
-  {% properties tool %}
+    {% properties tool %}
 
-  <div class="divider"></div>
+    <div class="divider"></div>
 
-  {% usefulness tool %}
-  
-  <div class="divider"></div>
+    {% usefulness tool %}
+    
+    <div class="divider"></div>
 
-  {% todo tool %}
+    {% todo tool %}
 
-  <div class="divider"></div>
-  
-  {% info tool %}
+    <div class="divider"></div>
+    
+    {% info tool %}
+  </div>
+</div>
+
+<div class="help-container tac" style="">
+  <h3>Hai bisogno di aiuto?</h3>
+  <a href="#" class="contact-experts uppercase">Contatta gli esperti</a>
 </div>
