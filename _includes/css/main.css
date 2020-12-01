@@ -4,6 +4,12 @@ body {font-size: 20px;}
 @media all and (max-width: 40em) {
   body {font-size: 16px;}
 }
+
+body {
+  background-image: url(/images/bg.svg);
+  background-size: cover;
+}
+
 h1, h2, h3, h4, h5, h6 {font-family: Bon Vivant;}
 
 .font-bon-vivant {font-family: Bon Vivant;}
@@ -45,4 +51,7 @@ img {
 }
 .small {
   font-size: 0.8em;
+}
+.card {
+  background: none;
 }
