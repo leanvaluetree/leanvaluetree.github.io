@@ -6,7 +6,8 @@ title: Lean Value Tree
 <div class="container">
 
   <h1 class="hero">
-    Valida il tuo prodotto con i nostri fantastici workshop
+    <!-- Valida il tuo prodotto con i nostri fantastici workshop -->
+    Valida le tue idee prima di renderle reali
   </h1>
 
   <div class="row my-5">
