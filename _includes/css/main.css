@@ -68,3 +68,27 @@ img {
 .text-black {
   color: black;
 }
+
+
+
+.link {
+  position: relative; 
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: .3s width linear;
+}
+.link:hover:after {
+  width: 100%;
+}
+
+.link-container:hover .link:after {
+  width: 100%;
+}
