@@ -31,7 +31,13 @@
     {%- endset -%}
     <style>{{ style | cssmin | safe }}</style>
   </head>
-  <body itemscope itemtype="http://schema.org/WebPage">
+  <body itemscope itemtype="http://schema.org/WebPage" {% if page.url != '/' %} class="loading-overlay" {% endif %}>
+    {% if page.url != '/' %}
+    <div class="overlay">
+      <img class="logo" src="/images/logo.svg">
+      <div class="loading-progress"></div>
+    </div>
+    {% endif %}
     <header class="container pt-5 pb-2">
       {% if  page.url == '/'%}
         <div class="line"></div>
@@ -86,8 +92,13 @@
       })
     </script>
     {% endif%}
+
     {% if page.url != '/' %}
     <script type="text/javascript">
+      setTimeout(() => {
+        document.body.classList.remove('loading-overlay')
+        document.querySelector('.overlay').remove()
+      }, 1000)
       const nextPageTrigger = document.querySelector('.nextpage-trigger')
       if (nextPageTrigger) {
         let scrolled = false
