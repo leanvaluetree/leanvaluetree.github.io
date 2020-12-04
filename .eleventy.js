@@ -24,6 +24,15 @@ module.exports = function(eleventyConfig) {
     return styles
   })
 
+  eleventyConfig.addFilter("next", function(tools, tool) {
+    const index = tools.findIndex((t) => t.ID === tool.ID) + 1
+    return tools[index]
+  })
+  eleventyConfig.addFilter("previous", function(tools, tool) {
+    const index = tools.findIndex((t) => t.ID === tool.ID) - 1
+    return tools[index]
+  })
+
   Object.keys(shortcodes).forEach(s => {
     eleventyConfig.addShortcode(s, shortcodes[s])
   })

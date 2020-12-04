@@ -35,8 +35,8 @@ permalink: tools/{{ tool.url }}
   <a href="#" class="contact-experts uppercase">Contatta gli esperti</a>
 </div>
 
-{%- set previousTool = tools | getPreviousCollectionItem(tool) -%}
-{%- set nextTool = tools | getNextCollectionItem(tool) -%}
+{%- set nextTool = tools | next(tool) -%}
+{%- set previousTool = tools | previous(tool) -%}
 
 {% if nextTool %}
 <div class="text-center py-5 bg">
@@ -46,14 +46,15 @@ permalink: tools/{{ tool.url }}
   <div class="line-v"></div>
   <div class="marquee my-5">
     <div>
-      <span class="text-uppercase">{{nextTool['Nome tool']}}</span>
+      <span class="text-uppercase">
+        <a href="/tools{{nextTool.url}}">{{nextTool['Nome tool']}}</a>
+      </span>
     </div>
   </div>
   <div class="line-v"></div>
   <h5 class="text-uppercase" style="font-size: 1rem">
     Scroll to discover
   </h5>
+  <div class="nextpage-trigger py-3" data-url="/tools{{nextTool.url}}"></div>
 </div>
 {% endif %}
-
-{# <pre>{{previousTool | json}}</pre> #}
