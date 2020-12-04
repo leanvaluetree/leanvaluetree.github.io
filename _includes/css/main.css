@@ -5,7 +5,7 @@ body {font-size: 20px;}
   body {font-size: 16px;}
 }
 
-body {
+body, .bg {
   background-image: url(/images/bg.svg);
   background-size: cover;
 }
@@ -27,6 +27,16 @@ h1, h2, h3, h4, h5, h6 {font-family: Bon Vivant;}
   background-color: #201D25;
   vertical-align: super;
 }
+.line-v {
+  display: inline-block;
+  height: 1px;
+  width: 40px;
+  margin-right: 1em;
+  background-color: #201D25;
+  vertical-align: super;
+  transform: rotateZ(90deg);
+}
+
 
 .filter-container {
   border-bottom: 1px solid #201D25;

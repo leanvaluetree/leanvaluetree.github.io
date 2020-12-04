@@ -1,0 +1,36 @@
+---
+layout: layouts/pure.njk
+pagination:
+  data: tools
+  size: 1
+  alias: tool
+permalink: pure/{{ tool.url }}
+---
+
+<div class="container">
+  <h2 class="tool-title">{{ tool["Nome tool"] }}</h2>
+  <div class="contain">
+    {{ tool['Descrizione di massima'] | safe }}
+
+    <img class="tool-image" src="/images/{{tool.image}}" />
+
+    {% properties tool %}
+
+    <div class="divider"></div>
+
+    {% usefulness tool %}
+    
+    <div class="divider"></div>
+
+    {% todo tool %}
+
+    <div class="divider"></div>
+    
+    {% info tool %}
+  </div>
+</div>
+
+<div class="help-container tac" style="">
+  <h3>Hai bisogno di aiuto?</h3>
+  <a href="#" class="contact-experts uppercase">Contatta gli esperti</a>
+</div>

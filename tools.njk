@@ -34,3 +34,26 @@ permalink: tools/{{ tool.url }}
   <h3>Hai bisogno di aiuto?</h3>
   <a href="#" class="contact-experts uppercase">Contatta gli esperti</a>
 </div>
+
+{%- set previousTool = tools | getPreviousCollectionItem(tool) -%}
+{%- set nextTool = tools | getNextCollectionItem(tool) -%}
+
+{% if nextTool %}
+<div class="text-center py-5 bg">
+  <h5 class="text-uppercase" style="font-size: 1rem">
+    Prossimo workshop
+  </h5>
+  <div class="line-v"></div>
+  <div class="marquee my-5">
+    <div>
+      <span class="text-uppercase">{{nextTool['Nome tool']}}</span>
+    </div>
+  </div>
+  <div class="line-v"></div>
+  <h5 class="text-uppercase" style="font-size: 1rem">
+    Scroll to discover
+  </h5>
+</div>
+{% endif %}
+
+{# <pre>{{previousTool | json}}</pre> #}
