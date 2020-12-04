@@ -115,7 +115,7 @@ img {
 }
 .overlay .loading-progress {
   position: absolute;
-  top: calc(58% - 2em);
+  top: calc(58% - 1em);
   left: calc(50% - 3em);
   animation: progress 1s ease;
   background-color: black;
@@ -127,5 +127,32 @@ img {
   }
   to {
     width: 6em;
+  }
+}
+
+.logo-wrapper {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+.logo-container {
+  position: relative;
+}
+.logo-text {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  top: calc(50% - 1.5em);
+  left: calc(50% - 1.5em);
+}
+.logo-rotate {
+  animation: rotate 20s linear infinite; 
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
   }
 }
