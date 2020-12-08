@@ -9,13 +9,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('css')
   eleventyConfig.addPassthroughCopy('js')
   eleventyConfig.addPassthroughCopy('CNAME')
+  eleventyConfig.addPassthroughCopy('animations')
 
-  eleventyConfig.addFilter('json', function(value) {
-    // console.log(value)
-    try {
-      return JSON.stringify(value, null, 2)
-    } catch (err) {}
-  })
+  eleventyConfig.addFilter('json', value => JSON.stringify(value, null, 2))
   eleventyConfig.addFilter("cssmin", function(code) {
     const hash = createHash(code)
     if (cache.has(hash)) return cache.get(hash)

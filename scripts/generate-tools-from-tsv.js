@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fsp = require('fs').promises
 const path = require('path')
 
@@ -30,9 +31,11 @@ function tsvLineToObject (fields) {
 }
 
 function addPermalink (tool) {
+  const normalized = tool['Nome tool'].toLowerCase().trim().replace(/\s/gi, '-').replace(/\//gi, '-')
   return {
     ...tool,
-    image: tool['Nome tool'].toLowerCase().trim().replace(/\s/gi, '-').replace(/\//gi, '-') + '.svg',
-    url: '/' + tool['Nome tool'].toLowerCase().trim().replace(/\s/gi, '-').replace(/\//gi, '-') + '/'
+    normalized,
+    image: normalized + '.svg',
+    url: '/' + normalized + '/'
   }
 }

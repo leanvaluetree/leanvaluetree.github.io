@@ -29,17 +29,20 @@ title: Lean Value Tree
   <div class="pt-5">
   <div class="row">
     {%- for tool in tools -%}
-      <a class="col-md-6 text-black py-2 mt-5 link-container" href="/tools{{tool.url}}">
-        <div class="card border-0">
-          <img src="/images/{{tool.image}}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title link">{{tool['Nome tool']}}</h4>
-            <p class="card-text">{{tool['Descrizione di massima']}}</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            <br/>
-          </div>
-        </div>
-      </a>
+<a class="col-md-6 text-black py-2 mt-5 link-container" href="/tools{{tool.url}}">
+<div class="card border-0">
+{% if tool.normalized == 'a-b-test' or tool.normalized == 'button-to-nowhere' %}
+<div id="{{tool.normalized}}"></div>
+{% else %}
+<img src="/images/{{tool.image}}" class="card-img-top" alt="..." />
+{% endif %}
+<div class="card-body">
+<h4 class="card-title link mt-0">{{tool['Nome tool']}}</h4>
+<p class="card-text">{{tool['Descrizione di massima']}}</p>
+<br/>
+</div>
+</div>
+</a>
     {%- endfor -%}
   </div>
   </div>

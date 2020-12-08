@@ -16,6 +16,7 @@
     "Difficoltà maggiori": "Identificazione metrica adeguata. Settaggio tool dedicato.",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "\r",
+    "normalized": "a-b-test",
     "image": "a-b-test.svg",
     "url": "/a-b-test/"
   },
@@ -36,6 +37,7 @@
     "Difficoltà maggiori": "Se intendi testare la comprensione di informazioni complesse, un testo molto lungo o una pagina molto strutturata allora è preferibile un altro tipo di test. ",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "\r",
+    "normalized": "five-seconds-test",
     "image": "five-seconds-test.svg",
     "url": "/five-seconds-test/"
   },
@@ -56,6 +58,7 @@
     "Difficoltà maggiori": "Le parole, la posizione e il design (colore e dimensione) usati per il bottone possono influenzare l'esito del test. Una soluzione può essere quella di sperimentare versioni alternative piazzando il bottone in punti diversi dell'interfaccia.  Questo esperimento potrebbe inficiare la credibilità del tuo servizio e ci saranno dei visitatori che potranno sentirsi raggirati dal test. Una buona comunicazione è la chiave per superare questi ostacoli. ",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "Fake door testing\r",
+    "normalized": "button-to-nowhere",
     "image": "button-to-nowhere.svg",
     "url": "/button-to-nowhere/"
   },
@@ -76,6 +79,7 @@
     "Difficoltà maggiori": "",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "\r",
+    "normalized": "google-trends",
     "image": "google-trends.svg",
     "url": "/google-trends/"
   },
@@ -96,6 +100,7 @@
     "Difficoltà maggiori": "Difficilmente il tuo team potrà applicare correttamente il metodo se non ha la possobilità di esere formato/confrontarsi con qualcuno che abbia già esperienze con XP.  Assicurati di avere una persona di business che sia parte attiva del team di sviluppo.",
     "Storia / esempio": "C3",
     "Potrebbe interessarti anche": "SCRUM, Pair Programming, MOB Programming, Kanban\r",
+    "normalized": "extreme-programming-(xp)",
     "image": "extreme-programming-(xp).svg",
     "url": "/extreme-programming-(xp)/"
   },
@@ -116,6 +121,7 @@
     "Difficoltà maggiori": "Il Wizard di Oz è uno dei modi più veloci ed efficaci per verificare se le soluzioni proposte creano valore per i clienti. Poiché il test viene eseguito manualmente, è possibile modificare rapidamente la soluzione e testare un gran numero di ipotesi, trovando le soluzioni più efficaci. In base alle ipostesi da verificare, la mole di lavoro umano necessaria potrebbe essere consistente, ma l'obiettivo è tenere i costi generali inferiori a quelli necessari per implementare realmente l'idea.",
     "Storia / esempio": "https://blog.prototypr.io/prototyping-voice-interfaces-with-wizard-of-oz-c3fe4362dd24",
     "Potrebbe interessarti anche": "\r",
+    "normalized": "wizard-of-oz",
     "image": "wizard-of-oz.svg",
     "url": "/wizard-of-oz/"
   },
@@ -136,6 +142,7 @@
     "Difficoltà maggiori": "Inizia con un prototipo piccolo, veloce ed economico. Più si va avanti nel  processo, più aumenta la fedeltà di ciò che si sta costruendo e più diventa costoso apportare cambiamenti.  Presentare un prototipo non perfetto, rendendolo in alcuni casi \"brutto\"/incompleto per aiutare le persone a sentirsi a proprio agio nel dare critiche costruttive.",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "\r",
+    "normalized": "prototipo-cliccabile",
     "image": "prototipo-cliccabile.svg",
     "url": "/prototipo-cliccabile/"
   },
@@ -156,6 +163,7 @@
     "Difficoltà maggiori": "",
     "Storia / esempio": "",
     "Potrebbe interessarti anche": "\r",
+    "normalized": "test-di-usabilità",
     "image": "test-di-usabilità.svg",
     "url": "/test-di-usabilità/"
   }
