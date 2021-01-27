@@ -5,17 +5,18 @@ title: Lean Value Tree
 
 <div class="container">
 
-  <h1 class="hero">
-    <!-- Valida il tuo prodotto con i nostri fantastici workshop -->
+  <h1 class="hero mb-0">
     Valida le tue idee prima di renderle reali
   </h1>
 
-  <div class="row my-5">
-    <div class="col-md-7">
+  <div class="row my-2">
+    <div class="col-lg-7">
     </div>
-    <div class="col-md-5">
-      Quando si vuole validare un prodotto è fondamentale analizzarlo in ogni sua parte, partendo dalla fattibilità, analizzando la desiderabilità senza mai tralasciare la redditività. Bene, abbiamo la soluzione che fa a caso tuo: un bel workshop! La nostra raccolta ti aiuterà a capire quale si adatta meglio a te e al tuo team.
-    </div>
+    <div class="col-lg-5">
+Come designer, sviluppatori e strategist abbiamo infinite possibilità per migliorare la vita dei nostri clienti grazie al digitale. Ma come essere sicuri che la funzionalità che abbiamo in mente è quella giusta per il nostro pubblico? Come esplorare diverse soluzioni prima di scegliere quella da implementare?
+<br>
+<br>
+Grazie al catalogo Secret Validation Society scoprirai come partire con il piede giusto mettendo al centro il valore per l’utente per creare  servizi realmente utili e apprezzati.
   </div>
 
   <div class="py-3 filter-container">
