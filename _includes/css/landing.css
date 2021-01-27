@@ -1,13 +1,14 @@
 .hero {
-  font-size: 6rem;
+  font-size: 7rem;
 
   font-family: Bon Vivant;
   font-style: normal;
   font-weight: light;
-  line-height: 105%;
+  line-height: 100%;
   
   text-transform: uppercase;
   color: #201D25;
+  max-width: 850px;
 }
 .hero .letter {
   /* display: inline-block; */
