@@ -39,7 +39,7 @@
       <div class="loading-progress"></div>
     </div>
     {% endif %}
-    <header class="mx-auto container pt-5 pb-2">
+    <header class="mx-auto container pt-24 pb-2">
       {% if  page.url == '/'%}
         <div class="line"></div>
         <a href="/" class="text-dark text-uppercase">secret validation society</a>
@@ -54,13 +54,11 @@
       {% endif %}
     </header>
 
-    <main id="content" class="mx-auto container pt-5">
+    <main id="content" class="mx-auto mx-5 pt-5 {%if page.url == '/' %}  container  {% endif %} ">
       {{ content | safe }}
     </main>
 
     {% if page.url == '/' %}
-      <hr>
-
       <footer class="mx-auto container pt-5">
         <div class="row">
           <div class="col-md-6">

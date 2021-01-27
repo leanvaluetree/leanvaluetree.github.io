@@ -14,7 +14,7 @@ module.exports = function properties (tool) {
   return `
   <div class="properties ovh">
     ${properties.map(p => `
-    <div class="property half">
+    <div class="property py-3">
       <div class="property-name">${p.name}</div>
       <div class="property-count">${'<div class="filled-circle"></div>'.repeat(p.count)}${'<div class="empty-circle"></div>'.repeat(5 - p.count)}</div>
     </div>

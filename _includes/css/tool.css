@@ -1,24 +1,19 @@
 .tool-image {
-  margin-top: 5em;
+  margin-top: 1em;
   margin-bottom: 5em;
 }
 .tool-title {
-  font-size: 3em;
+  font-size: 5em;
   font-family: Bon Vivant;
   font-style: normal;
   font-weight: 700;
   line-height: 105%;
   text-transform: uppercase;
   color: #201D25;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
-.contain {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 600px;
-  width: 100%;
-}
 .ovh {
   overflow: hidden;
 }
@@ -65,8 +60,8 @@
 }
 
 .help-container {
-  background-color: #201D25; 
-  color: #FBF7FD;
+  /* background-color: #201D25; 
+  color: #FBF7FD; */
   padding-top: 5em;
   padding-bottom: 5em;
   margin-top: 8em;
@@ -74,11 +69,11 @@
 
 .contact-experts {
   display: inline-block;
-  border: 2px solid #fff;
+  border: 2px solid #333;
   padding: 1em 2em;
   margin-top: 2em;
   font-size: 0.8em;
-  color: white;
+  /* color: white; */
 }
 
 .marquee {
