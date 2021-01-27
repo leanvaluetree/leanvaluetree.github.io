@@ -10,6 +10,7 @@
   "scripts": {
     "test": "ava",
     "build": "NODE_ENV=production eleventy",
+    "build:css": "NODE_ENV=production tailwindcss-cli build ./index.css -o _includes/css/build.css",
     "generate-tools": "node scripts/generate-tools-from-tsv.js",
     "start": "eleventy --serve"
   },
@@ -25,6 +26,10 @@
   },
   "homepage": "https://github.com/leanvaluetree/leanvaluetree.github.io#readme",
   "dependencies": {
-    "clean-css": "^4.2.3"
+    "autoprefixer": "^10.2.3",
+    "clean-css": "^4.2.3",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-cli": "^0.1.2"
   }
 }
