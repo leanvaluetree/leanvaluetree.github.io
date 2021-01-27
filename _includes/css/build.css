@@ -914,6 +914,10 @@ video {
   padding-bottom: 6rem;
 }
 
+.pb-48 {
+  padding-bottom: 12rem;
+}
+
 .pb-96 {
   padding-bottom: 24rem;
 }
