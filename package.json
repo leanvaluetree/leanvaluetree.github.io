@@ -4,8 +4,8 @@
   "description": "",
   "main": "",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "ava": "^3.13.0"
+    "@11ty/eleventy": "^0.11.1",
+    "ava": "^3.15.0"
   },
   "scripts": {
     "test": "ava",
