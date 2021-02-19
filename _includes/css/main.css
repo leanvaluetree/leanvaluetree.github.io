@@ -1,8 +1,24 @@
+@font-face {
+  font-family: BonVivant;
+  src: url("/fonts/Bon\ Vivant\ 2/Bon Vivant Serif Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: NeueHaas;
+  src: url("/fonts/Neue\ Haas\ Grotesk/NeueHaasGrotDisp-45Light.otf") format("opentype");
+}
+
+
+
+
 * {box-sizing: border-box;}
 
-body {font-size: 20px;}
+body {
+  font-size: 20px;
+  font-family: NeueHaas;
+}
 @media all and (max-width: 40em) {
   body {font-size: 16px;}
+  
 }
 
 body, .bg {
@@ -10,9 +26,9 @@ body, .bg {
   background-size: cover;
 }
 
-h1, h2, h3, h4, h5, h6 {font-family: Bon Vivant;}
+h1, h2, h3, h4, h5, h6 {font-family: "BonVivant";}
 
-.font-bon-vivant {font-family: Bon Vivant;}
+.font-bon-vivant {font-family: "BonVivant";}
 .text-black {color: #201D25;}
 .text-black:hover {
   color: #201D25;
