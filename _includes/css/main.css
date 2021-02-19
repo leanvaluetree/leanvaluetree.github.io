@@ -155,33 +155,7 @@ img {
 }
 
 
-.word {
-  transition: all .3s ease;
-  display: inline-block;
-  animation-delay: 100ms;
-}
-
-.word:nth-child(2n) {
-  animation-delay: 200ms;
-}
-.word:nth-child(3n) {
-  animation-delay: 300ms;
-}
-.word:nth-child(4n) {
-  animation-delay: 400ms;
-}
-.word:nth-child(5n) {
-  animation-delay: 500ms;
-}
-.word:nth-child(6n) {
-  animation-delay: 600ms;
-}
-.word:nth-child(7n) {
-  animation-delay: 700ms;
-}
-.word:nth-child(8n) {
-  animation-delay: 800ms;
-}
-.word:nth-child(9n) {
-  animation-delay: 900ms;
+.rotate-vertical {
+  transform: rotateZ(-90deg);
+  transform-origin: 8.5em 7em;
 }

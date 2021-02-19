@@ -35,56 +35,77 @@
     <style>{{ style | cssmin | safe }}</style>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" class="loading-overlay">
-    <div class="overlay">
-      <img class="logo" src="/images/logo.svg">
-      <div class="loading-progress"></div>
-    </div>
 
-    <div class="logo-wrapper">
-      <div class="logo-container">
-        <img class="logo-rotate" src="/images/logo-round-text.svg" />
-        <img class="logo-text" src="/images/logo.svg" />
+<div class="flex h-screen w-full">
+    <div class="h-screen p-2 relative border-black border-r">
+      <div class="w-20">
+        <div class="transform rotate-vertical w-64 absolute top-0 left-0">
+        Lean Validation Playbook
+        </div>
+
+        <div class="bg-gray-900 text-white py-4 text-center absolute bottom-0 left-0 right-0">
+          MENU
+        </div>
       </div>
     </div>
+    <div class="h-screen overflow-x-auto overflow-y-scroll p-2">
+        <div class="border-b bg-grey-light relative">
 
-    <header class="mx-auto container pt-24 pb-2">
-      {% if  page.url != '/'%}
-        <svg class="inline" width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="1.66667" height="38.3333" transform="matrix(4.37114e-08 1 1 -4.37114e-08 1.66699 9.16602)" fill="#201D25"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 0C9.16634 5.06261 5.06228 9.16667 -0.000326157 9.16667V10.8333C5.98276 10.8333 10.833 5.98309 10.833 0H9.16634Z" fill="#201D25"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 20C9.16634 14.9374 5.06228 10.8333 -0.000326157 10.8333V9.16667C5.98276 9.16667 10.833 14.0169 10.833 20H9.16634Z" fill="#201D25"/>
-        </svg>
-        &nbsp;&nbsp;
-        <a href="/" class="text-dark">Tutti i workshop</a>
-      {% endif %}
-    </header>
-
-    <main id="content" class="mx-auto mx-5 pt-5 {%if page.url == '/' %}  container  {% endif %} ">
-      {{ content | safe }}
-    </main>
-
-    {% if page.url == '/' %}
-      <footer class="mx-auto container">
-        <div class="marquee my-5 py-24">
-          <div>
-            <span class="text-uppercase">
-              Secret Validation Society
-            </span>
+          <div class="overlay">
+            <img class="logo" src="/images/logo.svg">
+            <div class="loading-progress"></div>
           </div>
+
+          <div class="logo-wrapper">
+            <div class="logo-container">
+              <img class="logo-rotate" src="/images/logo-round-text.svg" />
+              <img class="logo-text" src="/images/logo.svg" />
+            </div>
+          </div>
+
+          <header class="mx-auto container pt-24 pb-2">
+            {% if  page.url != '/'%}
+              <svg class="inline" width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="1.66667" height="38.3333" transform="matrix(4.37114e-08 1 1 -4.37114e-08 1.66699 9.16602)" fill="#201D25"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 0C9.16634 5.06261 5.06228 9.16667 -0.000326157 9.16667V10.8333C5.98276 10.8333 10.833 5.98309 10.833 0H9.16634Z" fill="#201D25"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 20C9.16634 14.9374 5.06228 10.8333 -0.000326157 10.8333V9.16667C5.98276 9.16667 10.833 14.0169 10.833 20H9.16634Z" fill="#201D25"/>
+              </svg>
+              &nbsp;&nbsp;
+              <a href="/" class="text-dark">Tutti i workshop</a>
+            {% endif %}
+          </header>
+
+          <main id="content" class="mx-auto mx-5 pt-5 {%if page.url == '/' %}  container  {% endif %} ">
+            {{ content | safe }}
+          </main>
+
+          {% if page.url == '/' %}
+            <footer class="mx-auto container">
+              <div class="marquee my-5 py-24">
+                <div>
+                  <span class="text-uppercase">
+                    Secret Validation Society
+                  </span>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap pb-96">
+                <div class="flex-1">
+                  IL PROGETTO
+                </div>
+                <div class="flex-1">
+                  <p>
+                    Secret Validation Society nasce dal genio di Cavucci e Fightbean che hanno dato vita insieme ad un portale in cui riportare tutti i fantastici workshop che potranno tornare utili anche a te! Sì, proprio a te!
+                  </p>
+                </div>
+              </div>
+            </footer>
+          {% endif %}
         </div>
+    </div>
+</div>
 
-        <div class="flex flex-wrap pb-96">
-          <div class="flex-1">
-            IL PROGETTO
-          </div>
-          <div class="flex-1">
-            <p>
-              Secret Validation Society nasce dal genio di Cavucci e Fightbean che hanno dato vita insieme ad un portale in cui riportare tutti i fantastici workshop che potranno tornare utili anche a te! Sì, proprio a te!
-            </p>
-          </div>
-        </div>
-      </footer>
-    {% endif %}
+
   
     <script type="text/javascript">
       setTimeout(() => {
