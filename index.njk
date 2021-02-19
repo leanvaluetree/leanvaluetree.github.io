@@ -18,7 +18,7 @@ title: Lean Value Tree
   </div>
   
   <div class="py-5 workshop-header">
-    <h4 class="mt-0">Workshop</h4>
+    <h4 class="my-0">Workshop</h4>
     <!-- <b>Tutti</b>
     <span class="ml-3">Feasability</span>
     <span class="ml-3">Viability</span>
@@ -26,20 +26,24 @@ title: Lean Value Tree
   </div>
 
   <div class="pt-5">
-  <div class="flex flex-wrap">
 {%- for tool in tools -%}
-<a class="block w-1/2 text-black py-2 mt-5 link-container" href="/tools{{tool.url}}">
-  {% if tool.normalized == 'a-b-test' or tool.normalized == 'button-to-nowhere' or tool.normalized == 'wizard-of-oz' %}
-  <div id="{{tool.normalized}}" class="border border-black"></div>
-  {% else %}
-  <img src="/images/{{tool.image}}" class="min-w-full
-" alt=""/>
-  {% endif %}
-  <div class="">
-    <h4 class="link mt-0">{{tool['Nome tool']}}</h4>
-    <p class="">{{tool['Descrizione di massima']}}</p>
+{% if loop.index0 % 2 == 0 %}
+<div class="flex border border-black border-l-0 border-r-0">
+{% endif %}
+<a class="block w-1/2 text-black link-container" href="/tools{{tool.url}}">
+  <div class="{% if loop.index0 % 2 == 0 %} mr-2 {% else %} ml-2{% endif %}">
+    <div id="{{tool.normalized}}" class="border border-black border-t-0 border-b-0"></div>
+    <div class="border border-black p-4 px-8 border-b-0 min-height-tool-description">
+      <h4 class="link mt-1 mb-2"> {{tool['Nome tool']}}</h4>
+      <p class="text-base">{{tool['Descrizione di massima'] | firstSentence}}</p>
+    </div>
   </div>
 </a>
+{% if loop.index0 % 2 != 0 %}
+</div>
+<div class="border border-black border-t-0 {% if not loop.last %} border-b-0 {% endif %} h-8">
+</div>
+{% endif %}
 {%- endfor -%}
   </div>
 </div>

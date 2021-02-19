@@ -68,29 +68,6 @@ img {
 
 
 
-.link {
-  position: relative; 
-}
-
-.link:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 3px;
-  background-color: black;
-  transition: .3s width linear;
-}
-.link:hover:after {
-  width: 100%;
-}
-
-.link-container:hover .link:after {
-  width: 100%;
-}
-
-
 .loading-overlay > * {
   display: none;
 }
@@ -158,4 +135,8 @@ img {
 .rotate-vertical {
   transform: rotateZ(-90deg);
   transform-origin: 8.5em 7em;
+}
+
+.min-height-tool-description {
+  min-height: 20em;
 }

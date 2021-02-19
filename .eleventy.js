@@ -12,6 +12,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('animations')
 
   eleventyConfig.addFilter('json', value => JSON.stringify(value, null, 2))
+  eleventyConfig.addFilter('firstSentence', value => value.split('.')[0])
   eleventyConfig.addFilter("cssmin", function(code) {
     const hash = createHash(code)
     if (cache.has(hash)) return cache.get(hash)
