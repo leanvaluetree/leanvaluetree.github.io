@@ -94,20 +94,27 @@
     {% if page.url == '/' %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie_light_html.min.js" integrity="sha512-YDmvCqWiji8aPW4jK1hSytdWri58Ar4EPWSSD+wwWK8OKy99dUUYgbWhaU/heui162mdVrdWhqm9yLbzOkzEOA==" crossorigin="anonymous"></script>
     <script type="text/javascript">
-    var textWrapper = document.querySelector('.hero');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\w+/g, "<span class='word animate__animated animate__fadeInUp'>$&</span>");
-    {# textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='word animate__animated animate__fadeInUp'>$&</span>"); #}
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('hero'),
+      path: 'animations/hero.json',
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      name: 'hero',
+      onComplete: console.log
+    });
 
     {%- for tool in tools -%}
     bodymovin.loadAnimation({
       container: document.getElementById('{{tool.normalized}}'),
       path: 'animations/{{tool.normalized}}.json',
-      renderer: 'svg', // Required
+      renderer: 'svg',
       loop: true,
       autoplay: true,
       name: '{{tool.normalized}}',
       onComplete: console.log
-    })
+    });
     {% endfor %}
     </script>
     {% endif%}

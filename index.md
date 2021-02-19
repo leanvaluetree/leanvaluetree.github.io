@@ -4,14 +4,7 @@ title: Lean Value Tree
 ---
 
 <div class="container">
-
-  <h1 class="hero mb-0">
-    Valida le
-    tue idee prima
-    di renderle
-    reali
-  </h1>
-
+  <div id="hero" class="hero"></div>
 
   <div class="lg:flex my-8">
     <div class="flex-1"></div>
@@ -23,13 +16,13 @@ title: Lean Value Tree
       Grazie al catalogo Secret Validation Society scoprirai come partire con il piede giusto mettendo al centro il valore per l’utente per creare  servizi realmente utili e apprezzati.
     </div>
   </div>
-  <div class="">
-    <div class="py-5 filter-container">
-      <b>Tutti</b>
-      <span class="ml-3">Feasability</span>
-      <span class="ml-3">Viability</span>
-      <span class="ml-3">Desirability</span>
-    </div>
+  
+  <div class="py-5 workshop-header">
+    <h4 class="mt-0">Workshop</h4>
+    <!-- <b>Tutti</b>
+    <span class="ml-3">Feasability</span>
+    <span class="ml-3">Viability</span>
+    <span class="ml-3">Desirability</span> -->
   </div>
 
   <div class="pt-5">

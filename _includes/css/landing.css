@@ -9,12 +9,13 @@
   color: #201D25;
   max-width: 1280px;
 }
-.hero .letter {
-  /* display: inline-block; */
-  line-height: 1em;
-}
 @media all and (max-width: 50em) {
   .hero {
     font-size: 3rem;
   }   
+}
+
+
+.workshop-header {
+  border-top: 1px solid #201D25;
 }
