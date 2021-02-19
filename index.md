@@ -6,8 +6,12 @@ title: Lean Value Tree
 <div class="container">
 
   <h1 class="hero mb-0">
-    Valida le tue idee prima di renderle reali
+    Valida le
+    tue idee prima
+    di renderle
+    reali
   </h1>
+
 
   <div class="lg:flex my-8">
     <div class="flex-1"></div>
@@ -25,7 +29,6 @@ title: Lean Value Tree
       <span class="ml-3">Feasability</span>
       <span class="ml-3">Viability</span>
       <span class="ml-3">Desirability</span>
-      <img src="/images/logo.svg" class="h-8 float-right font-bon-vivant"/>
     </div>
   </div>
 

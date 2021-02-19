@@ -38,11 +38,15 @@
       <div class="loading-progress"></div>
     </div>
 
+    <div class="logo-wrapper">
+      <div class="logo-container">
+        <img class="logo-rotate" src="/images/logo-round-text.svg" />
+        <img class="logo-text" src="/images/logo.svg" />
+      </div>
+    </div>
+
     <header class="mx-auto container pt-24 pb-2">
-      {% if  page.url == '/'%}
-        <div class="line"></div>
-        <a href="/" class="text-dark text-uppercase">secret validation society</a>
-      {% else %}
+      {% if  page.url != '/'%}
         <svg class="inline" width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="1.66667" height="38.3333" transform="matrix(4.37114e-08 1 1 -4.37114e-08 1.66699 9.16602)" fill="#201D25"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 0C9.16634 5.06261 5.06228 9.16667 -0.000326157 9.16667V10.8333C5.98276 10.8333 10.833 5.98309 10.833 0H9.16634Z" fill="#201D25"/>
