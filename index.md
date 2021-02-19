@@ -29,7 +29,7 @@ title: Lean Value Tree
   <div class="flex flex-wrap">
 {%- for tool in tools -%}
 <a class="block w-1/2 text-black py-2 mt-5 link-container" href="/tools{{tool.url}}">
-  {% if tool.normalized == 'a-b-test' or tool.normalized == 'button-to-nowhere' %}
+  {% if tool.normalized == 'a-b-test' or tool.normalized == 'button-to-nowhere' or tool.normalized == 'wizard-of-oz' %}
   <div id="{{tool.normalized}}" class="border border-black"></div>
   {% else %}
   <img src="/images/{{tool.image}}" class="min-w-full
