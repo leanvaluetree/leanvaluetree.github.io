@@ -7,6 +7,7 @@ const createHash = str => crypto.createHash("sha256").update(str).digest("hex")
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('images')
   eleventyConfig.addPassthroughCopy('css')
+  eleventyConfig.addPassthroughCopy('fonts')
   eleventyConfig.addPassthroughCopy('js')
   eleventyConfig.addPassthroughCopy('CNAME')
   eleventyConfig.addPassthroughCopy('animations')
