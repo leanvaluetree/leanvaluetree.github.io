@@ -35,101 +35,98 @@
     <style>{{ style | cssmin | safe }}</style>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" class="loading-overlay">
+    <div class="flex h-screen w-full">
+      <div class="h-screen p-2 relative border-black border-r">
+        <div class="w-20">
+          <div class="transform rotate-vertical w-64 absolute top-0 left-0">
+          Lean Validation Playbook
+          </div>
 
-<div class="flex h-screen w-full">
-    <div class="h-screen p-2 relative border-black border-r">
-      <div class="w-20">
-        <div class="transform rotate-vertical w-64 absolute top-0 left-0">
-        Lean Validation Playbook
-        </div>
-
-        <div class="bg-black bg-opacity-90 text-white py-8 text-center absolute bottom-0 left-0 right-0">
-          <img src="/images/icon_menu.svg" alt="Menu" class="mx-auto" />
+          <div class="bg-black bg-opacity-90 text-white py-8 text-center absolute bottom-0 left-0 right-0">
+            <img src="/images/icon_menu.svg" alt="Menu" class="mx-auto" />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="h-screen w-full overflow-x-auto overflow-y-scroll">
-      <div class="border-b bg-grey-light relative px-12">
+      <div class="h-screen w-full overflow-x-auto overflow-y-scroll">
+        <div class="border-b bg-grey-light relative px-12">
 
-        <div class="overlay">
-          <img class="logo" src="/images/logo.svg">
-          <div class="loading-progress"></div>
-        </div>
-
-        <div class="logo-wrapper">
-          <div class="logo-container">
-            <img class="logo-rotate" src="/images/logo-round-text.svg" />
-            <img class="logo-text" src="/images/logo.svg" />
+          <div class="overlay">
+            <img class="logo" src="/images/logo.svg">
+            <div class="loading-progress"></div>
           </div>
+
+          <div class="logo-wrapper">
+            <div class="logo-container">
+              <img class="logo-rotate" src="/images/logo-round-text.svg" />
+              <img class="logo-text" src="/images/logo.svg" />
+            </div>
+          </div>
+
+          <header class="mx-auto container pt-24 pb-2">
+            {% if  page.url != '/'%}
+              <svg class="inline" width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="1.66667" height="38.3333" transform="matrix(4.37114e-08 1 1 -4.37114e-08 1.66699 9.16602)" fill="#201D25"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 0C9.16634 5.06261 5.06228 9.16667 -0.000326157 9.16667V10.8333C5.98276 10.8333 10.833 5.98309 10.833 0H9.16634Z" fill="#201D25"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 20C9.16634 14.9374 5.06228 10.8333 -0.000326157 10.8333V9.16667C5.98276 9.16667 10.833 14.0169 10.833 20H9.16634Z" fill="#201D25"/>
+              </svg>
+              &nbsp;&nbsp;
+              <a href="/" class="text-dark">Tutti i workshop</a>
+            {% endif %}
+          </header>
+
+          <main id="content" class="mx-auto pt-5 {%if page.url == '/' %}  container  {% endif %} ">
+            {{ content | safe }}
+          </main>
         </div>
 
-        <header class="mx-auto container pt-24 pb-2">
-          {% if  page.url != '/'%}
-            <svg class="inline" width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="1.66667" height="38.3333" transform="matrix(4.37114e-08 1 1 -4.37114e-08 1.66699 9.16602)" fill="#201D25"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 0C9.16634 5.06261 5.06228 9.16667 -0.000326157 9.16667V10.8333C5.98276 10.8333 10.833 5.98309 10.833 0H9.16634Z" fill="#201D25"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 20C9.16634 14.9374 5.06228 10.8333 -0.000326157 10.8333V9.16667C5.98276 9.16667 10.833 14.0169 10.833 20H9.16634Z" fill="#201D25"/>
-            </svg>
-            &nbsp;&nbsp;
-            <a href="/" class="text-dark">Tutti i workshop</a>
-          {% endif %}
-        </header>
+        {% if page.url == '/' %}
+        <footer class="mx-auto">
+          <div class="marquee my-5 py-24">
+            <div>
+              <span class="text-uppercase">
+                Lean Value Playbook
+              </span>
+            </div>
+          </div>
 
-        <main id="content" class="mx-auto pt-5 {%if page.url == '/' %}  container  {% endif %} ">
-          {{ content | safe }}
-        </main>
+          <div class="pt-24 px-12 text-base bg-black bg-opacity-90 text-white ">
+            <div class="flex flex-row pb-32">
+              <div class="p-6">
+                LOGO
+              </div>
+              <div class="flex-1 p-6">
+                <p class="uppercase text-gray-400">
+                Il progetto
+                </p>
+                <p>
+                  Lean Value Playbook nasce dal genio di Cavucci e Fightbean che hanno dato vita insieme ad un portale in cui riportare tutti i fantastici workshop che potranno tornare utili anche a te! Sì, proprio a te!
+                </p>
+              </div>
+              <div class="p-6">
+                <p class="uppercase text-gray-400">
+                Indice
+                </p>
+                <p><a href="/" class="uppercase">Homepage</a></p>
+                <p><a href="/" class="uppercase">About</a></p>
+                <p><a href="/" class="uppercase">Lean Value Tree</a></p>
+              </div>
+            </div>
+            <hr>
+            <div class="py-16 text-sm ">
+              <div class="flex">
+                <div class="text-xs px-4">
+                &copy; 2021 Fightbean S.R.L. a socio unico - All rights reserved. Sede legale: C.so Duca degli Abruzzi 43, 10129 Torino. P.Iva 11149320019
+                </div>
+                <div class="uppercase text-sm px-4">
+                  Privacy | Cookie policy
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        {% endif %}
       </div>
-
-      {% if page.url == '/' %}
-      <footer class="mx-auto">
-        <div class="marquee my-5 py-24">
-          <div>
-            <span class="text-uppercase">
-              Lean Value Playbook
-            </span>
-          </div>
-        </div>
-
-        <div class="pt-24 px-12 text-base bg-black bg-opacity-90 text-white ">
-          <div class="flex flex-row pb-32">
-            <div class="p-6">
-              LOGO
-            </div>
-            <div class="flex-1 p-6">
-              <p class="uppercase text-gray-400">
-              Il progetto
-              </p>
-              <p>
-                Lean Value Playbook nasce dal genio di Cavucci e Fightbean che hanno dato vita insieme ad un portale in cui riportare tutti i fantastici workshop che potranno tornare utili anche a te! Sì, proprio a te!
-              </p>
-            </div>
-            <div class="p-6">
-              <p class="uppercase text-gray-400">
-              Indice
-              </p>
-              <p><a href="/" class="uppercase">Homepage</a></p>
-              <p><a href="/" class="uppercase">About</a></p>
-              <p><a href="/" class="uppercase">Lean Value Tree</a></p>
-            </div>
-          </div>
-          <hr>
-          <div class="py-16 text-sm ">
-            <div class="flex">
-              <div class="text-xs px-4">
-              &copy; 2021 Fightbean S.R.L. a socio unico - All rights reserved. Sede legale: C.so Duca degli Abruzzi 43, 10129 Torino. P.Iva 11149320019
-              </div>
-              <div class="uppercase text-sm px-4">
-               Privacy | Cookie policy
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      {% endif %}
     </div>
-</div>
-
-
   
     <script type="text/javascript">
       setTimeout(() => {
