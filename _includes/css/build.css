@@ -1074,6 +1074,11 @@ video {
   padding-bottom: 6rem;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
