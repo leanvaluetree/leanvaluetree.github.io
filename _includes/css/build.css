@@ -1497,6 +1497,10 @@ video {
     border-color: rgba(0, 0, 0, var(--tw-border-opacity));
   }
 
+  .lg\:border-0 {
+    border-width: 0px;
+  }
+
   .lg\:border {
     border-width: 1px;
   }
@@ -1523,6 +1527,10 @@ video {
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:flex-row {

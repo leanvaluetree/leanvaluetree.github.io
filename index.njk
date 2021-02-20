@@ -39,6 +39,10 @@ title: Lean Value Tree
     </div>
   </div>
 </a>
+{% if loop.index0 % 2 == 0 %}
+<div class="block lg:hidden lg:border-0 border border-black border-t-0 {% if not loop.last %} border-b-0 {% endif %} h-8">
+</div>
+{% endif %}
 {% if loop.index0 % 2 != 0 %}
 </div>
 <div class="border border-black border-t-0 {% if not loop.last %} border-b-0 {% endif %} h-8">
