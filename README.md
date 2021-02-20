@@ -19,3 +19,13 @@ build
 npm run build
 ```
 
+## Todo
+
+- menu
+- pages
+  - about
+  - lean value tree
+- links footer
+  - privacy 
+  - cookie policy
+- mobile views
