@@ -28,12 +28,12 @@ title: Lean Value Tree
   <div class="pt-5">
 {%- for tool in tools -%}
 {% if loop.index0 % 2 == 0 %}
-<div class="flex border border-black border-l-0 border-r-0">
+<div class="lg:flex lg:border lg:border-black lg:border-l-0 lg:border-r-0">
 {% endif %}
-<a class="block w-1/2 text-black link-container" href="/tools{{tool.url}}">
-  <div class="{% if loop.index0 % 2 == 0 %} mr-2 {% else %} ml-2{% endif %}">
-    <div id="{{tool.normalized}}" class="border border-black border-t-0 border-b-0"></div>
-    <div class="border border-black p-4 px-8 border-b-0 min-height-tool-description">
+<a class="block w-full lg:w-1/2 text-black link-container" href="/tools{{tool.url}}">
+  <div class="{% if loop.index0 % 2 == 0 %} lg:mr-2 {% else %} lg:ml-2{% endif %}">
+    <div id="{{tool.normalized}}" class="border border-black lg:border-t-0 border-b-0"></div>
+    <div class="border border-black p-4 px-8 lg:border-b-0 min-height-tool-description">
       <h4 class="link mt-1 mb-2"> {{tool['Nome tool']}}</h4>
       <p class="text-base">{{tool['Descrizione di massima'] | firstSentence}}</p>
     </div>
