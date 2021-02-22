@@ -78,6 +78,12 @@ img {
   color: black;
 }
 
+@media all and (max-width: 50em) {
+  .tool-title {
+    font-size: 2.5rem;
+  }
+}
+
 
 .loading-overlay {
   height: 100vh;
