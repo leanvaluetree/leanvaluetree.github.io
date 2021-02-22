@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div class="h-screen w-full overflow-x-auto overflow-y-scroll">
+      <main class="h-screen w-full overflow-x-auto overflow-y-scroll">
         <div class="border-b bg-grey-light relative px-12">
 
           <div class="overlay">
@@ -123,7 +123,7 @@
           </div>
         </footer>
         {% endif %}
-      </div>
+      </main>
     </div>
 
     <div class="hidden w-full h-full fixed top-0 bottom-0 bg-white overflow-y-scroll" id="menu">
@@ -193,9 +193,11 @@
     {% if page.url != '/' %}
     <script type="text/javascript">
       const nextPageTrigger = document.querySelector('.nextpage-trigger')
+      console.log(nextPageTrigger)
       if (nextPageTrigger) {
         let scrolled = false
-        document.addEventListener('scroll', debounce(() => {
+        document.querySelector('main').addEventListener('scroll', debounce(() => {
+          console.log(isElementInViewport(nextPageTrigger))
           if (isElementInViewport(nextPageTrigger) && scrolled) {
             window.location = nextPageTrigger.getAttribute('data-url')
           }
