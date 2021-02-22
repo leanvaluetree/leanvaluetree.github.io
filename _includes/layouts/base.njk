@@ -78,16 +78,16 @@
           <div id="svs-loop" class="my-40"></div>
 
           <div class="pt-24 lg:px-12 text-lg bg-black bg-opacity-90 text-white ">
-            <div class="lg:flex lg:flex-row pb-32 w-full lg:w-2/3 mx-auto">
+            <div class="lg:flex lg:flex-row pb-32 w-full lg:w-9/12 mx-auto">
               <div class="p-6">
-                LOGO
+                <img src="/images/white-logo.svg" class="h-12" />
               </div>
               <div class="lg:flex-1 p-6 lg:px-24">
                 <p class="uppercase text-gray-400">
                 Il progetto
                 </p>
                 <p>
-                  Lean Value Playbook nasce dal genio di Cavucci e Fightbean che hanno dato vita insieme ad un portale in cui riportare tutti i fantastici workshop che potranno tornare utili anche a te! Sì, proprio a te!
+                  The Lean Validation Playbook è una raccolta di metodi per testare idee e soluzioni legate alla creazione di prodotti digitali e affronta il lato operativo che manca a molte strategie di business.
                 </p>
               </div>
               <div class="p-6">
@@ -163,6 +163,18 @@
         name: 'hero',
         onComplete: console.log
       });
+
+      {#
+      bodymovin.loadAnimation({
+        container: document.querySelector('main'),
+        path: '/animations/background.json',
+        renderer: 'html',
+        loop: true,
+        autoplay: true,
+        name: 'hero',
+        onComplete: console.log
+      });
+      #}
     </script>
 
     {% if page.url == '/' %}
