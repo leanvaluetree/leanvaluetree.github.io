@@ -18,14 +18,3 @@ build
 ```
 npm run build
 ```
-
-## Todo
-
-- pages
-  - about
-  - lean value tree
-- links footer
-  - privacy 
-  - cookie policy
-- mobile view
-- tool details
