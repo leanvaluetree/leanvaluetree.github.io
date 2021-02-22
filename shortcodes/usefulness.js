@@ -1,7 +1,7 @@
 module.exports = function usefulness (tool) {
   return `
   <div class="usefulness">
-    <h4 class="uppercase">Perfetto se...</h4>
+    <h3 class="uppercase">Perfetto se...</h3>
     <p>
       ${tool['Perfetto se...']}
     </p>

@@ -9,24 +9,30 @@ permalink: tools/{{ tool.url }}
 
 
 <div class="mx-auto container">
-  <h2 class="tool-title">{{ tool["Nome tool"] }}</h2>
+  <h1 class="uppercase mt-16 mb-10">{{ tool["Nome tool"] }}</h1>
   <div class="flex">
     <div class="lg:mr-4">
-      <div class="w-3/4">
+      <div class="lg:w-3/4">
         <img class="tool-image w-full" src="/images/{{tool.image}}" />
         {{ tool['Descrizione di massima'] | safe }}
         {% usefulness tool %}
         {% todo tool %}
       </div>
     </div>
-    <div class="" style="width: 60rem;">
+    <div class="lg:block hidden" style="width: 60rem;">
       {% info tool %}
       {% properties tool %}
     </div>
   </div>
 </div>
 
-<div class="appendix mt-10 container mx-auto">
+<div class="mx-auto container lg:hidden block mt-16 pt-16 pb-16 border-black border-0 border-t">
+  {% info tool %}
+  {% properties tool %}
+</div>
+
+
+<div class="appendix my-16 container mx-auto">
   {% appendix tool %}
 </div>
 

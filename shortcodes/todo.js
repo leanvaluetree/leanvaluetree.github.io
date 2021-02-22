@@ -1,7 +1,7 @@
 module.exports = function todo (tool) {
   return `
   <div class="todo">
-    <h4 class="uppercase">To-Do</h4>
+    <h3 class="uppercase">To-Do</h3>
     <p>
       ${tool['To-do'].replace(/\\n/gi, '<br/>')}
     </p>

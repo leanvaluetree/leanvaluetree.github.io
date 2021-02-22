@@ -24,11 +24,10 @@
     </script>
     {%- set style -%}
       {%- include "css/build.css" -%}
-      {# {%- include "css/reset.css" -%} #}
-      {%- include "css/type-scale.css" -%}
       {%- include "css/main.css" -%}
       {%- include "css/landing.css" -%}
       {%- include "css/tool.css" -%}
+      {%- include "css/type-scale.css" -%}
     {%- endset -%}
     <style>{{ style | cssmin | safe }}</style>
   </head>
