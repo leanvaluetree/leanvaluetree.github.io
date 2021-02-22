@@ -83,7 +83,10 @@ img {
 }
 
 
-
+.loading-overlay {
+  height: 100vh;
+  width: 100vw;
+}
 .loading-overlay > * {
   display: none;
 }
@@ -91,7 +94,7 @@ img {
   display: none;
 }
 .loading-overlay > .overlay {
-  display: block;
+  display: block !important;
   position: fixed;
   top: 0;
   right: 0;

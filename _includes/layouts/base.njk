@@ -33,6 +33,10 @@
     <style>{{ style | cssmin | safe }}</style>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" class="loading-overlay">
+    <div class="overlay">
+      <img class="logo" src="/images/logo.svg">
+      <div class="loading-progress"></div>
+    </div>
     <div class="flex h-screen w-full">
       <div class="hidden lg:block h-screen p-2 relative border-black border-r">
         <div class="w-20">
@@ -47,21 +51,15 @@
       </div>
       <main class="h-screen w-full overflow-x-auto overflow-y-scroll">
         <div class="border-b bg-grey-light relative px-12">
-
-          <div class="overlay">
-            <img class="logo" src="/images/logo.svg">
-            <div class="loading-progress"></div>
-          </div>
-
           <div class="logo-wrapper">
-            <div class="logo-container">
+            <div class="logo-container" id="logo-container">
               <img class="logo-rotate" src="/images/logo-round-text.svg" />
               <img class="logo-text" src="/images/logo.svg" />
             </div>
           </div>
 
+          {% if  page.url != '/'%}
           <header class="mx-auto container pt-24 pb-2">
-            {% if  page.url != '/'%}
               <svg class="inline" width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="1.66667" height="38.3333" transform="matrix(4.37114e-08 1 1 -4.37114e-08 1.66699 9.16602)" fill="#201D25"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 0C9.16634 5.06261 5.06228 9.16667 -0.000326157 9.16667V10.8333C5.98276 10.8333 10.833 5.98309 10.833 0H9.16634Z" fill="#201D25"/>
@@ -69,8 +67,8 @@
               </svg>
               &nbsp;&nbsp;
               <a href="/" class="text-dark">Tutti i workshop</a>
-            {% endif %}
           </header>
+          {% endif %}
 
           <main id="content" class="mx-auto pt-5 {%if page.url == '/' %}  container  {% endif %} ">
             {{ content | safe }}
