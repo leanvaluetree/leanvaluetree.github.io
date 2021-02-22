@@ -36,21 +36,34 @@
       <img class="logo" src="/images/logo.svg">
       <div class="loading-progress"></div>
     </div>
-    <div class="flex h-screen w-full">
+    <div class="flex lg:flex-row flex-col h-screen w-full">
       <div class="hidden lg:block h-screen p-2 relative border-black border-r">
         <div class="w-20">
           <div class="transform rotate-vertical w-64 absolute top-0 left-0">
           Lean Validation Playbook
           </div>
 
-          <div id="toggle-menu" class="bg-black bg-opacity-90 text-white py-8 text-center absolute bottom-0 left-0 right-0">
+          <div class="toggle-menu bg-black bg-opacity-90 text-white py-8 text-center absolute bottom-0 left-0 right-0">
+            <img src="/images/icon_menu.svg" alt="Menu" class="mx-auto" />
+          </div>
+        </div>
+      </div>
+      <div class="block lg:hidden w-full border-black border-b">
+        <div class="flex flex-wrap">
+          <div class="flex-1 flex items-center">
+            <div class="pl-12">
+              Lean Validation Playbook
+            </div>
+          </div>
+
+          <div class="toggle-menu w-20 bg-black bg-opacity-90 text-white py-8 text-center">
             <img src="/images/icon_menu.svg" alt="Menu" class="mx-auto" />
           </div>
         </div>
       </div>
       <main class="h-screen w-full overflow-x-auto overflow-y-scroll">
-        <div class="border-b bg-grey-light relative px-12">
-          <div class="logo-wrapper">
+        <div class="border-b bg-grey-light relative lg:px-12 px-6">
+          <div class="logo-wrapper lg:w-40 w-24">
             <div class="logo-container" id="logo-container">
             </div>
           </div>
@@ -116,18 +129,25 @@
     </div>
 
     <div class="hidden w-full h-full fixed top-0 bottom-0 bg-white overflow-y-scroll" id="menu">
-      <div class="w-full h-full bg p-16">
+      <div class="w-full h-full bg">
         <div class="container mx-auto">
-          <h5 class="mt-0 mb-12">Lean Validation Playbook</h5>
-          <hr class="border border-black">
-          <div class="flex flex-row">
-            <div class="flex-1">
-              <h1 class="uppercase mt-10 mb-0"><a href="/">Home</a></h1>
-              <h1 class="uppercase mt-10 mb-0"><a href="/about">About</a></h1>
-              <h1 class="uppercase mt-10 mb-0"><a href="/">Metodo</a></h1>
+          <div class="flex-1 flex items-center">
+            <div class="flex-1 pl-12">
+              Lean Validation Playbook
             </div>
-            <div class="flex items-end w-96">
-              <p class="px-12 h-48">
+            <div class="toggle-menu w-20 py-8 text-center" id="close-menu">
+              <img src="/images/icon_menu_close.svg" alt="Menu" class="mx-auto" />
+            </div>
+          </div>
+          <hr class="border border-black">
+          <div class="lg:flex flex-row p-6 lg:p-16">
+            <div class="flex-1">
+              <H2 class="uppercase mt-10 mb-0"><a href="/">Home</a></H2>
+              <H2 class="uppercase mt-10 mb-0"><a href="/about">About</a></H2>
+              <H2 class="uppercase mt-10 mb-0"><a href="/">Metodo</a></H2>
+            </div>
+            <div class="lg:flex items-end lg:w-96">
+              <p class="py-12 lg:px-12 lg:h-48">
                 The Lean Value Playbook è una raccolta di metodi per testare idee e soluzioni legate alla creazione di prodotti digitali e affrontare il lato operativo che manca a molte strategie di business.
               </p>
             </div>
@@ -142,14 +162,28 @@
         document.querySelector('.overlay').remove()
       }, 1000)
 
-      document.querySelector('#toggle-menu').addEventListener('click', () => {
-        console.log('toggle menu')
-        if (document.querySelector('#menu').classList.contains('hidden')) {
-          document.querySelector('#menu').classList.remove('hidden')
-          document.querySelector('#menu').classList.add('block')
-          document.querySelector('body').classList.add('overflow-hidden')
-        }        
+      const toggles = [...document.querySelectorAll('.toggle-menu')]
+
+      const closeMenu = document.getElementById('close-menu')
+
+      toggles.forEach(el => {
+        el.addEventListener('click', () => {
+          console.log('toggle menu')
+          if (document.querySelector('#menu').classList.contains('hidden')) {
+            document.querySelector('#menu').classList.remove('hidden')
+            document.querySelector('#menu').classList.add('block')
+            document.querySelector('body').classList.add('overflow-hidden')
+          }        
+        })
       })
+
+      closeMenu.addEventListener('click', () => {
+        console.log('close menu')
+        document.querySelector('#menu').classList.add('hidden')
+        document.querySelector('#menu').classList.remove('block')
+        document.querySelector('body').classList.remove('overflow-hidden')
+      })
+
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie_light_html.min.js" integrity="sha512-YDmvCqWiji8aPW4jK1hSytdWri58Ar4EPWSSD+wwWK8OKy99dUUYgbWhaU/heui162mdVrdWhqm9yLbzOkzEOA==" crossorigin="anonymous"></script>
