@@ -53,8 +53,6 @@
         <div class="border-b bg-grey-light relative px-12">
           <div class="logo-wrapper">
             <div class="logo-container" id="logo-container">
-              <img class="logo-rotate" src="/images/logo-round-text.svg" />
-              <img class="logo-text" src="/images/logo.svg" />
             </div>
           </div>
 
@@ -155,12 +153,24 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie_light_html.min.js" integrity="sha512-YDmvCqWiji8aPW4jK1hSytdWri58Ar4EPWSSD+wwWK8OKy99dUUYgbWhaU/heui162mdVrdWhqm9yLbzOkzEOA==" crossorigin="anonymous"></script>
 
+    <script type="text/javascript">
+      bodymovin.loadAnimation({
+        container: document.getElementById('logo-container'),
+        path: '/animations/logo-scroll.json',
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: 'hero',
+        onComplete: console.log
+      });
+    </script>
+
     {% if page.url == '/' %}
     <script type="text/javascript">
 
     bodymovin.loadAnimation({
       container: document.getElementById('hero'),
-      path: 'animations/hero.json',
+      path: '/animations/hero.json',
       renderer: 'svg',
       loop: true,
       autoplay: true,
@@ -170,7 +180,7 @@
 
     bodymovin.loadAnimation({
       container: document.getElementById('svs-loop'),
-      path: 'animations/svs-scritta-loop.json',
+      path: '/animations/svs-scritta-loop.json',
       renderer: 'svg',
       loop: true,
       autoplay: true,
@@ -181,8 +191,8 @@
     {%- for tool in tools -%}
     bodymovin.loadAnimation({
       container: document.getElementById('{{tool.normalized}}'),
-      path: 'animations/a-b-test.json',
-      // path: 'animations/{{tool.normalized}}.json',
+      path: '/animations/a-b-test.json',
+      // path: '/animations/{{tool.normalized}}.json',
       renderer: 'svg',
       loop: true,
       autoplay: true,

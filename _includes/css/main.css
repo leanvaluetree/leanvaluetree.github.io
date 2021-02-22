@@ -127,6 +127,7 @@ img {
   position: absolute;
   top: 2em;
   right: 2em;
+  width: 10em;
 }
 .logo-container {
   position: relative;
