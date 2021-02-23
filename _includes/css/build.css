@@ -1063,8 +1063,16 @@ video {
   margin-top: 4rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .mt-auto {
@@ -1451,6 +1459,11 @@ video {
 
 .no-underline {
   text-decoration: none;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .select-all {
