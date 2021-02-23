@@ -8,12 +8,13 @@ permalink: tools/{{ tool.url }}
 ---
 
 
-<div class="mx-auto container">
+<div class="mx-auto container max-w-6xl">
   <h1 class="uppercase mt-16 mb-10 tool-title">{{ tool["Nome tool"] }}</h1>
   <div class="flex">
     <div class="lg:mr-4">
       <div class="lg:w-3/4">
-        <img class="tool-image w-full" src="/images/{{tool.image}}" />
+        {# <img class="tool-image w-full" src="/images/{{tool.image}}" /> #}
+        <div id="{{tool.normalized}}" class="my-20"></div>
         {{ tool['Descrizione di massima'] | safe }}
         {% usefulness tool %}
         {% todo tool %}
@@ -26,17 +27,17 @@ permalink: tools/{{ tool.url }}
   </div>
 </div>
 
-<div class="mx-auto container lg:hidden block mt-16 pt-16 pb-16 border-black border-0 border-t">
+<div class="mx-auto container max-w-6xl lg:hidden block mt-16 pt-16 pb-16 border-black border-0 border-t">
   {% info tool %}
   {% properties tool %}
 </div>
 
 
-<div class="appendix my-16 container mx-auto">
+<div class="appendix my-16 container max-w-6xl mx-auto">
   {% appendix tool %}
 </div>
 
-<div class="help-container text-center">
+<div class="help-container max-w-6xl text-center">
   <svg class="mx-auto" width="81" height="24" viewBox="0 0 81 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5 0C40.5 6.62742 34.9036 12 28 12C34.9036 12 40.5 17.3726 40.5 24C40.5 17.3726 46.0964 12 53 12C46.0964 12 40.5 6.62742 40.5 0Z" fill="#201D25"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M73 4C73 8.41828 69.4183 12 65 12C69.4183 12 73 15.5817 73 20C73 15.5817 76.5817 12 81 12C76.5817 12 73 8.41828 73 4Z" fill="#201D25"/>
