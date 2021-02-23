@@ -11,7 +11,7 @@ async function main () {
   const fields = header.split('\t').map(t => t.replace('\r', ''))
   const json = tsvByLines
     .map(tsvLineToObject(fields))
-    .filter(t => t['Nome tool'])
+    .filter(t => t['Nome tool'] && !['4', '5'].includes(t['ID']))
     .map(addPermalink)
 
   console.log(json)
