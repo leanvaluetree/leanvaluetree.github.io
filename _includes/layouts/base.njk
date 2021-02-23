@@ -238,8 +238,8 @@
     {%- for tool in tools -%}
     bodymovin.loadAnimation({
       container: document.getElementById('{{tool.normalized}}'),
-      path: '/animations/a-b-test.json',
-      // path: '/animations/{{tool.normalized}}.json',
+      //path: '/animations/a-b-test.json',
+      path: '/animations/{{tool.normalized}}.json',
       renderer: 'svg',
       loop: true,
       autoplay: true,
