@@ -64,19 +64,18 @@
       <main class="h-screen w-full overflow-x-auto overflow-y-scroll">
         <div class="border-b bg-grey-light relative lg:px-12 px-6">
           <div class="logo-wrapper lg:w-40 w-24">
-            <div class="logo-container" id="logo-container">
-            </div>
+            <lottie-player src="/animations/logo-scroll.json" class="logo-container" background="transparent"  speed="1"  autoplay></lottie-player>
           </div>
 
           {% if  page.url != '/'%}
           <header class="mx-auto container pt-24 pb-2">
-              <svg class="inline" width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="1.66667" height="38.3333" transform="matrix(4.37114e-08 1 1 -4.37114e-08 1.66699 9.16602)" fill="#201D25"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 0C9.16634 5.06261 5.06228 9.16667 -0.000326157 9.16667V10.8333C5.98276 10.8333 10.833 5.98309 10.833 0H9.16634Z" fill="#201D25"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 20C9.16634 14.9374 5.06228 10.8333 -0.000326157 10.8333V9.16667C5.98276 9.16667 10.833 14.0169 10.833 20H9.16634Z" fill="#201D25"/>
-              </svg>
-              &nbsp;&nbsp;
-              <a href="/" class="text-dark">Tutti i workshop</a>
+            <svg class="inline" width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="1.66667" height="38.3333" transform="matrix(4.37114e-08 1 1 -4.37114e-08 1.66699 9.16602)" fill="#201D25"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 0C9.16634 5.06261 5.06228 9.16667 -0.000326157 9.16667V10.8333C5.98276 10.8333 10.833 5.98309 10.833 0H9.16634Z" fill="#201D25"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16634 20C9.16634 14.9374 5.06228 10.8333 -0.000326157 10.8333V9.16667C5.98276 9.16667 10.833 14.0169 10.833 20H9.16634Z" fill="#201D25"/>
+            </svg>
+            &nbsp;&nbsp;
+            <a href="/" class="text-dark">Tutti i workshop</a>
           </header>
           {% endif %}
 
@@ -87,7 +86,7 @@
 
         {% if not page.url.startsWith('/tool') %}
         <footer class="mx-auto">
-          <div id="svs-loop" class="my-40"></div>
+          <lottie-player src="/animations/svs-scritta-loop.json" class="my-40" background="transparent"  speed="1"  autoplay></lottie-player>
 
           <div class="pt-24 lg:px-12 text-lg bg-black bg-opacity-90 text-white ">
             <div class="lg:flex lg:flex-row pb-32 w-full lg:w-9/12 mx-auto">
@@ -155,6 +154,8 @@
         </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   
     <script type="text/javascript">
       setTimeout(() => {
@@ -183,72 +184,7 @@
         document.querySelector('#menu').classList.remove('block')
         document.querySelector('body').classList.remove('overflow-hidden')
       })
-
     </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie_light_html.min.js" integrity="sha512-YDmvCqWiji8aPW4jK1hSytdWri58Ar4EPWSSD+wwWK8OKy99dUUYgbWhaU/heui162mdVrdWhqm9yLbzOkzEOA==" crossorigin="anonymous"></script>
-
-    <script type="text/javascript">
-      bodymovin.loadAnimation({
-        container: document.getElementById('logo-container'),
-        path: '/animations/logo-scroll.json',
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        name: 'hero',
-        onComplete: console.log
-      });
-
-      {#
-      bodymovin.loadAnimation({
-        container: document.querySelector('main'),
-        path: '/animations/background.json',
-        renderer: 'html',
-        loop: true,
-        autoplay: true,
-        name: 'hero',
-        onComplete: console.log
-      });
-      #}
-    </script>
-
-    {% if page.url == '/' %}
-    <script type="text/javascript">
-
-    bodymovin.loadAnimation({
-      container: document.getElementById('hero'),
-      path: '/animations/hero.json',
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      name: 'hero',
-      onComplete: console.log
-    });
-
-    bodymovin.loadAnimation({
-      container: document.getElementById('svs-loop'),
-      path: '/animations/svs-scritta-loop.json',
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      name: 'hero',
-      onComplete: console.log
-    });
-
-    {%- for tool in tools -%}
-    bodymovin.loadAnimation({
-      container: document.getElementById('{{tool.normalized}}'),
-      //path: '/animations/a-b-test.json',
-      path: '/animations/{{tool.normalized}}.json',
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      name: '{{tool.normalized}}',
-      onComplete: console.log
-    });
-    {% endfor %}
-    </script>
-    {% endif %}
 
     {% if page.url != '/' %}
     <script type="text/javascript">
@@ -288,20 +224,5 @@
 
     </script>
     {% endif%}
-
-    {% if page.url.startsWith('/tool') %}
-    <script type="text/javascript">
-      bodymovin.loadAnimation({
-        container: document.getElementById('{{tool.normalized}}'),
-        //path: '/animations/a-b-test.json',
-        path: '/animations/{{tool.normalized}}.json',
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        name: '{{tool.normalized}}',
-        onComplete: console.log
-      });
-    </script>
-    {% endif %}
   </body>
 </html>
