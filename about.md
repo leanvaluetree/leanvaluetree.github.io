@@ -6,9 +6,7 @@ nopad: true
 
 <h1 class="pl-12">{{title}}</h1>
 
-<div class="mb-16">
-  <img class="w-full grayscale-image" src="/images/about-image-1.png"/>
-</div>
+<img class="my-16 w-full grayscale-image" src="/images/about-image-1.png"/>
 
 <div class="page-container container mx-auto max-w-4xl lg:px-12 px-6">
   <h4>The Lean Validation Playbook è una raccolta di metodi per testare idee e soluzioni legate alla creazione di prodotti digitali e affronta il lato operativo che manca a molte strategie di business.</h4>
@@ -40,9 +38,7 @@ nopad: true
   </p>
 </div>
 
-<div class="mb-16">
-  <img class="w-full grayscale-image" src="/images/about-image-2.png"/>
-</div>
+<img class="my-16 w-full grayscale-image" src="/images/about-image-2.png"/>
 
 <div class="page-container container mx-auto max-w-4xl lg:px-12 px-6">
   <h5>Riallineare aziende e team in un mondo in rapido cambiamento</h5 >
