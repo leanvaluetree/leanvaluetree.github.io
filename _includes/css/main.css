@@ -162,3 +162,7 @@ img {
 .min-height-tool-description {
   min-height: 12em;
 }
+
+.page-container p {
+  max-width: 650px;
+}
