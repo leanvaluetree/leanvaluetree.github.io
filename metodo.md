@@ -65,10 +65,14 @@ nopad: true
 
   <ul>
     <li>
-      <h5 class="info-heading m-0">Scommessa:</h5> l’assunzione che vogliamo testare, validare e migliorare. Definisce il “cosa” possiamo realizzare per portare a terra il nostro obiettivo. Sappiamo che si tratta di un azzardo - una scommessa, per l’appunto - sulla quale siamo intenzionati a puntare ma del cui risultato non siamo certi (Creando un sito web dedicato al LVT, molte aziende potranno scoprire questo incredibile strumento).
+      <h5 class="info-heading m-0 mb-2">Scommessa:</h5> 
+      <p>l’assunzione che vogliamo testare, validare e migliorare. Definisce il “cosa” possiamo realizzare per portare a terra il nostro obiettivo. Sappiamo che si tratta di un azzardo - una scommessa, per l’appunto - sulla quale siamo intenzionati a puntare ma del cui risultato non siamo certi (Creando un sito web dedicato al LVT, molte aziende potranno scoprire questo incredibile strumento).
+      </p>
     </li>
     <li>
-      <h5 class="info-heading m-0">Esperimento:</h5> il “come”, i passi concreti da fare per validare la nostra scommessa. Rappresenta una delle possibili soluzioni che possiamo mettere in campo per rendere tangibile la nostra scommessa e testare le nostre assunzioni (Creiamo un A/B test per capire quale versione del sito è più efficace per diffondere il nostro messaggio).
+      <h5 class="info-heading m-0 mb-2">Esperimento:</h5>
+      <p>il “come”, i passi concreti da fare per validare la nostra scommessa. Rappresenta una delle possibili soluzioni che possiamo mettere in campo per rendere tangibile la nostra scommessa e testare le nostre assunzioni (Creiamo un A/B test per capire quale versione del sito è più efficace per diffondere il nostro messaggio).
+      </p>
     </li>
   </ul>
 
