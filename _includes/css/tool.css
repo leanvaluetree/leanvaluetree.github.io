@@ -50,11 +50,10 @@
 }
 
 .help-container {
-  /* background-color: #201D25; 
-  color: #FBF7FD; */
   padding-top: 5em;
   padding-bottom: 5em;
   margin-top: 8em;
+  /* background-image: url('/images/background.svg'); */
 }
 
 .contact-experts {
@@ -109,4 +108,9 @@
   100% {
       transform: translate3d(var(--move-final), 0, 0);
   }
+}
+
+.tool-tag {
+  letter-spacing: 0.2rem;
+  font-size: 13px;
 }
