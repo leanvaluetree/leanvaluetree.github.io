@@ -21,7 +21,7 @@ nopad: true
 
 <div class="page-container container mx-auto max-w-4xl lg:px-12 px-6">
 
-  <h5>Prendere decisioni è fare una scommessa sul futuro</h5 >
+  <h5 class="info-heading">Prendere decisioni è fare una scommessa sul futuro</h5 >
 
   <p>
   Quando si parte con un nuovo progetto digitale, le idee su cosa fare sono tante. 
@@ -36,7 +36,7 @@ nopad: true
   Il Lean Validation Playbook si inserisce nel framework del Lean Value Tree e raccoglie strumenti e pratiche capaci di catalizzare velocemente un feedback tra utenti e progettisti. Se ogni nuova funzionalità di un prodotto nasce come una scommessa sul valore percepito da coloro che la useranno, questa guida offre un aiuto pratico alla realizzazione di un esperimento inteso proprio a ridurre l’incertezza di questa scommessa, mitigando il rischio di investire tempo e denaro su features che nessuno vorrà comprare o usare. 
   </p>
 
-  <h5>Pratiche testate sul campo da professionisti del digitale</h5>
+  <h5 class="info-heading">Pratiche testate sul campo da professionisti del digitale</h5>
 
   <p>
   Queste pratiche nascono dal lavoro sul campo di professionisti attivi in Italia e su scala internazionale, che hanno sondato i limiti e le possibilità di ognuna di esse confrontandosi con problemi concreti. Non si tratta di un esercizio accademico ma <b>il risultato di lezioni apprese lavorando fianco a fianco con le aziende alle prese con il digitale</b>, che hanno bisogno di avere risposte precise su cosa fare e come farlo.
@@ -46,13 +46,13 @@ nopad: true
 <img class="my-16 w-full grayscale-image" src="/images/about-image-2.png"/>
 
 <div class="page-container container mx-auto max-w-4xl lg:px-12 px-6">
-  <h5>Riallineare aziende e team in un mondo in rapido cambiamento</h5 >
+  <h5 class="info-heading">Riallineare aziende e team in un mondo in rapido cambiamento</h5 >
 
   <p>
   Il Lean Validation Playbook è rivolto a coloro che cercano strumenti e tecniche da applicare al proprio contesto professionale, sia esso una grande azienda o una startup, o uno scenario solo apparentemente lontano come il terzo settore. Ogni scheda è pensata per dare il massimo supporto a chi sta valutando nuove opportunità di business e di miglioramento, in un processo iterativo che farà emergere le direzioni migliori tra le infinite possibili.
   </p>
 
-  <h5>Da dove iniziare?</h5>
+  <h5 class="info-heading">Da dove iniziare?</h5>
 
   <p>
   Da un piccolo passo. 
@@ -65,7 +65,7 @@ nopad: true
   Gli esperimenti che ti suggeriamo sono disegnati per raccogliere informazioni, imparando dai tuoi utenti per arrivare al passo successivo più consapevole di quando sei partito.
   </p>
 
-  <h5>I membri del team</h5>
+  <h5 class="info-heading">I membri del team</h5>
 
   <p class="underline">Franceska Dalsaso - <i>UX Designer</i>&nbsp;&nbsp;<b>@Fightbean</b></p>
   <p class="underline">Matteo Cavucci - <i>Consulente per lo sviluppo del prodotto digitale</i></p>
@@ -75,7 +75,7 @@ nopad: true
 
   <br>
 
-  <h5>Vuoi contribuire alla collezione di strumenti e pratiche?</h5>
+  <h5 class="info-heading">Vuoi contribuire alla collezione di strumenti e pratiche?</h5>
   <p>
   Inviaci una richiesta all’indirizzo [email] con la pratica che suggerisci di aggiungere al Playbook: ti ricontatteremo il prima possibile.
   </p>
