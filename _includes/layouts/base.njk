@@ -65,8 +65,8 @@
         <div class="relative {% if not nopad %} lg:px-12 px-6 {% endif %}">
           {% if  page.url.startsWith('/tool') %}
           <header class="mx-auto container pt-24 pb-2 max-w-5xl">
-            <a href="/" class="text-dark uppercase small-label">
-            <lottie-player src="/animations/arrow-back.json" class="inline-block w-8 mr-3 align-top" background="transparent"  speed="1" loop autoplay></lottie-player>
+            <a href="/" class="text-dark uppercase small-label lottie-animation-hover">
+            <lottie-player src="/animations/arrow-back.json" class="inline-block w-8 mr-3 align-top" background="transparent"  speed="1" loop></lottie-player>
             Tutti i workshop
             </a>
           </header>
@@ -171,7 +171,6 @@
 
       toggles.forEach(el => {
         el.addEventListener('click', () => {
-          console.log('toggle menu')
           if (document.querySelector('#menu').classList.contains('hidden')) {
             document.querySelector('#menu').classList.remove('hidden')
             document.querySelector('#menu').classList.add('block')
@@ -181,10 +180,29 @@
       })
 
       closeMenu.addEventListener('click', () => {
-        console.log('close menu')
         document.querySelector('#menu').classList.add('hidden')
         document.querySelector('#menu').classList.remove('block')
         document.querySelector('body').classList.remove('overflow-hidden')
+      })
+
+      const lottieMouseoverElements = [...document.querySelectorAll('.lottie-animation-hover')]
+      lottieMouseoverElements.forEach((el) => {
+        el.addEventListener('mouseover', function (event){
+          if (typeof event.target.play === 'function') {
+            event.target.play()
+          } else {
+            const player = event.target.querySelector('lottie-player')
+            if (player) player.play()
+          }
+        })
+        el.addEventListener('mouseout', function (event){
+          if (typeof event.target.stop === 'function') {
+            event.target.stop()
+          } else {
+            const player = event.target.querySelector('lottie-player')
+            if (player) player.stop()
+          }
+        })
       })
     </script>
 
