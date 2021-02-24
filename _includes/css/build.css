@@ -1817,10 +1817,6 @@ video {
     padding-left: 6rem;
     padding-right: 6rem;
   }
-
-  .xl\:w-40 {
-    width: 10rem;
-  }
 }
 
 @media (min-width: 1536px) {

@@ -13,18 +13,19 @@ nopad: true
 
 <img class="w-full grayscale-image pt-5" src="/images/about-image-1.png"/>
 
-<div class="page-container container mx-auto max-w-4xl lg:px-8 px-6 py-28">
+<div class="page-container mx-auto max-w-4xl lg:px-8 px-6 py-28">
   <h4 class="text-center m-0">The Lean Validation Playbook è una raccolta di metodi per testare idee e soluzioni legate alla creazione di prodotti digitali e affronta il lato operativo che manca a molte strategie di business.</h4>
 </div>
 
 <hr class="border border-black border-t mb-24"/>
 
-<div class="page-container container mx-auto max-w-4xl lg:px-12 px-6">
+<div class="page-container mx-auto max-w-3xl lg:px-12 px-6">
 
   <h5 class="info-heading">Prendere decisioni è fare una scommessa sul futuro</h5 >
 
   <p>
-  Quando si parte con un nuovo progetto digitale, le idee su cosa fare sono tante. 
+  Quando si parte con un nuovo progetto digitale, le idee su cosa fare sono tante.
+  
   Non tutte le idee hanno però lo stesso peso: alcune sono più appetibili per i gli utenti finali; altre, potenzialmente efficaci, possono avere un impatto notevole sull’eredità tecnologica; altre ancora possono rivelarsi interessanti ma non abbastanza perché qualcuno paghi per il loro utilizzo.
   </p>
 
@@ -45,7 +46,7 @@ nopad: true
 
 <img class="my-16 w-full grayscale-image" src="/images/about-image-2.png"/>
 
-<div class="page-container container mx-auto max-w-4xl lg:px-12 px-6">
+<div class="page-container mx-auto max-w-3xl lg:px-12 px-6">
   <h5 class="info-heading">Riallineare aziende e team in un mondo in rapido cambiamento</h5 >
 
   <p>

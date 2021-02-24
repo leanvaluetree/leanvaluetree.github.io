@@ -142,10 +142,6 @@ img {
   min-height: 12em;
 }
 
-.page-container p {
-  max-width: 650px;
-}
-
 .grayscale-image {
     -webkit-filter: grayscale(100%);
        -moz-filter: grayscale(100%);
@@ -161,8 +157,8 @@ ul {
 
 ul li {
   margin-left: 1.5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .small-label {
