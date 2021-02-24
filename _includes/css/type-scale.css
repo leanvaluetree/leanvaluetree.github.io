@@ -28,7 +28,7 @@ small, .text_small {font-size: 0.667em;}
 
 @media all and (max-width: 50em) {
   h1 {
-    font-size: 5em;
+    font-size: 4.2em;
   }
 
   h2 {font-size: 3em;}
