@@ -44,7 +44,7 @@ nopad: true
   </p>
 </div>
 
-<img class="my-16 w-full grayscale-image" src="/images/about-image-2.png"/>
+<img class="my-28 w-full grayscale-image" src="/images/about-image-2.png"/>
 
 <div class="page-container mx-auto max-w-3xl lg:px-12 px-6">
   <h5 class="info-heading">Riallineare aziende e team in un mondo in rapido cambiamento</h5 >
