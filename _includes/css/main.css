@@ -185,3 +185,8 @@ ul li {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+.footer-label {
+  font-size: 13px;
+  letter-spacing: 20%;
+}
