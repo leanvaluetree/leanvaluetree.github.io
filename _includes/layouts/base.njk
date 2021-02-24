@@ -74,6 +74,12 @@
             <a href="/" class="text-dark">Tutti i workshop</a>
           </header>
           {% endif %}
+          
+          {% if page.url.startsWith('/tool') or page.url == '/' %}
+          <div class="logo-wrapper">
+            <lottie-player src="/animations/logo-scroll.json" class="" background="transparent"  speed="1"  autoplay></lottie-player>
+          </div>
+          {% endif %}
 
           <main id="content" class="mx-auto pt-5 {%if page.url == '/' %}  container  {% endif %} ">
             {{ content | safe }}
