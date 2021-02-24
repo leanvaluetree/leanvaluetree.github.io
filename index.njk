@@ -6,7 +6,7 @@ title: Lean Value Tree
 <div class="container">
   <lottie-player src="/animations/hero.json" class="hero mt-24" background="transparent"  speed="1"  autoplay></lottie-player>
 
-  <div class="lg:flex my-8 mb-36">
+  <div class="xl:flex my-8 mb-36">
     <div class="flex-1"></div>
     <div class="flex-1"></div>
     <div class="flex-1">
@@ -28,7 +28,7 @@ title: Lean Value Tree
   <div class="pt-5">
 {%- for tool in tools -%}
 {% if loop.index0 % 2 == 0 %}
-<div class="lg:flex lg:border lg:border-black lg:border-l-0 lg:border-r-0">
+<div class="xl:flex lg:border lg:border-black lg:border-l-0 lg:border-r-0">
 {% endif %}
 <a class="block w-full lg:w-1/2 text-black link-container" href="/tools{{tool.url}}">
   <div class="{% if loop.index0 % 2 == 0 %} lg:mr-2 {% else %} lg:ml-2{% endif %}">

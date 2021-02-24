@@ -1782,6 +1782,9 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:flex {
+    display: flex;
+  }
 }
 
 @media (min-width: 1536px) {
