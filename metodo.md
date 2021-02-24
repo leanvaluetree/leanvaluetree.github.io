@@ -11,7 +11,7 @@ nopad: true
   </div>
 </div>
 
-<img class="w-full grayscale-image" src="/images/metodo-image-1.png"/>
+<img class="w-full grayscale-image pt-5" src="/images/metodo-image-1.png"/>
 
 <div class="page-container container mx-auto max-w-4xl lg:px-12 px-6">
   <h4>Un framework per ripensare un prodotto esistente o per crearne uno nuovo, dedicando tempo ad esplorare problemi e soluzioni invece di convergere velocemente sull’idea più ovvia (o su quella preferita del boss). È  un metodo strutturato per orchestrare ad alto livello esperimenti sul prodotto che producano informazione e riducano l’incertezza.</h4>
