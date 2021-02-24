@@ -26,7 +26,7 @@ nopad: true
   <p>
   Quando si parte con un nuovo progetto digitale, le idee su cosa fare sono tante.
 
-  Non tutte le idee hanno però lo stesso peso: alcune sono più appetibili per i gli utenti finali; altre, potenzialmente efficaci, possono avere un impatto notevole sull’eredità tecnologica; altre ancora possono rivelarsi interessanti ma non abbastanza perché qualcuno paghi per il loro utilizzo.
+  Non tutte le idee hanno però lo stesso peso: alcune sono più appetibili per gli utenti finali; altre, potenzialmente efficaci, possono avere un impatto notevole sull’eredità tecnologica; altre ancora possono rivelarsi interessanti ma non abbastanza perché qualcuno paghi per il loro utilizzo.
   </p>
 
   <p>
