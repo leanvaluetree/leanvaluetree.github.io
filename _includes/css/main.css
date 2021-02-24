@@ -33,6 +33,9 @@ body, .bg {
 h1, h2, h3, h4, h5, h6 {font-family: "BonVivant";}
 
 .font-bon-vivant {font-family: "BonVivant";}
+.font-neue-haas {font-family: NeueHaas;}
+.font-neue-haas-body {font-family: NeueHaasBody;}
+
 .text-black {color: #201D25;}
 .text-black:hover {
   color: #201D25;

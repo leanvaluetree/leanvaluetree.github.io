@@ -17,7 +17,7 @@ nopad: true
   <h4 class="text-center m-0">The Lean Validation Playbook è una raccolta di metodi per testare idee e soluzioni legate alla creazione di prodotti digitali e affronta il lato operativo che manca a molte strategie di business.</h4>
 </div>
 
-<hr class="border border-black border-t mb-24"/>
+<hr class="border border-black border-t border-b-0 mb-24"/>
 
 <div class="page-container mx-auto max-w-3xl lg:px-12 px-6">
 
@@ -25,7 +25,7 @@ nopad: true
 
   <p>
   Quando si parte con un nuovo progetto digitale, le idee su cosa fare sono tante.
-  
+
   Non tutte le idee hanno però lo stesso peso: alcune sono più appetibili per i gli utenti finali; altre, potenzialmente efficaci, possono avere un impatto notevole sull’eredità tecnologica; altre ancora possono rivelarsi interessanti ma non abbastanza perché qualcuno paghi per il loro utilizzo.
   </p>
 
