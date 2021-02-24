@@ -13,8 +13,8 @@ nopad: true
 
 <img class="w-full grayscale-image" src="/images/about-image-1.png"/>
 
-<div class="page-container container mx-auto max-w-4xl lg:px-12 px-6">
-  <h4>The Lean Validation Playbook è una raccolta di metodi per testare idee e soluzioni legate alla creazione di prodotti digitali e affronta il lato operativo che manca a molte strategie di business.</h4>
+<div class="page-container container mx-auto max-w-4xl lg:px-8 px-6 py-28">
+  <h4 class="text-center m-0">The Lean Validation Playbook è una raccolta di metodi per testare idee e soluzioni legate alla creazione di prodotti digitali e affronta il lato operativo che manca a molte strategie di business.</h4>
 </div>
 
 <hr class="border border-black border-t mb-24"/>
