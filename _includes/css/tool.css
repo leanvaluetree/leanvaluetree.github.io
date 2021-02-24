@@ -26,7 +26,8 @@
   margin-right: 0.25em;
 }
 .filled-circle {
-  background: black;
+  background: url(/images/rating.svg);
+  background-size: cover;
 }
 .empty-circle {
   border: 2px solid black;
