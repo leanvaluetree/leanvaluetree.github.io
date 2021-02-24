@@ -146,7 +146,7 @@ img {
 
 .rotate-vertical {
   transform: rotateZ(-90deg);
-  transform-origin: 7em 5.5em;
+  transform-origin: 7.7em 6.1em;
 }
 
 .min-height-tool-description {
