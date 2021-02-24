@@ -4,9 +4,14 @@ title: About
 nopad: true
 ---
 
-<h1 class="pl-12">{{title}}</h1>
+<div class="py-24 xl:px-24 px-12 flex flex-row flex-wrap">
+  <h1 class="m-0 flex-1 uppercase">{{title}}</h1>
+  <div class="lg:w-40 w-28">
+    <lottie-player src="/animations/logo-scroll.json" class="" background="transparent"  speed="1"  autoplay></lottie-player>
+  </div>
+</div>
 
-<img class="my-16 w-full grayscale-image" src="/images/about-image-1.png"/>
+<img class="w-full grayscale-image" src="/images/about-image-1.png"/>
 
 <div class="page-container container mx-auto max-w-4xl lg:px-12 px-6">
   <h4>The Lean Validation Playbook è una raccolta di metodi per testare idee e soluzioni legate alla creazione di prodotti digitali e affronta il lato operativo che manca a molte strategie di business.</h4>
