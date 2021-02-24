@@ -53,7 +53,7 @@ nopad: true
 
   <img class="pt-24" src="/images/metodo.svg" alt="metodo">
 
-  <h5 class="info-heading">Scommesse ed esperimenti</h5>
+  <h5 class="info-heading">Scommesse &amp; esperimenti</h5>
 
   <p>
   A valle di una vision consolidata (Credo che il LVT sia uno strumento efficace, utile a prendere decisioni), è possibile identificare una serie di obiettivi più pratici (Voglio che più aziende possibili conoscano questo straordinario metodo).

@@ -6,6 +6,10 @@
   font-family: NeueHaas;
   src: url("/fonts/Neue Haas Grotesk/NHaasGroteskTXPro-55Rg.otf") format("opentype");
 }
+@font-face {
+  font-family: NeueHaasBody;
+  src: url("/fonts/Neue Haas Grotesk/NeueHaasGrotDisp-45Light.otf") format("opentype");
+}
 
 
 
@@ -14,7 +18,11 @@
 
 body {
   font-size: 20px;
-  font-family: NeueHaas;
+  font-family: NeueHaasBody;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: normal;
 }
 
 body, .bg {
