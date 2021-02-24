@@ -57,12 +57,43 @@
 }
 
 .contact-experts {
+  position: relative;
   display: inline-block;
   border: 2px solid #333;
   padding: 1em 2em;
   margin-top: 2em;
   font-size: 0.8em;
-  /* color: white; */
+  min-width: 300px;
+  max-width: 80%;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact-experts:hover{
+  /* background-color: black; */
+  color: white;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact-experts:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+}
+.contact-experts:hover:after,
+.contact-experts:active:after {
+  width: 100%;
 }
 
 .marquee {
