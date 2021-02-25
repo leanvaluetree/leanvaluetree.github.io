@@ -2631,10 +2631,6 @@ video {
     margin-bottom: 4rem;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
   .lg\:mr-2 {
     margin-right: 0.5rem;
   }
@@ -2688,6 +2684,10 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
