@@ -40,7 +40,11 @@
       <div class="hidden lg:block h-screen p-2 relative border-black border-r">
         <div class="w-20">
           <div class="font-bon-vivant transform rotate-vertical w-64 absolute top-0 left-0">
-          Lean Validation Playbook
+          {% if page.url != '/' %}
+            <a href="/">Lean Validation Playbook</a>
+          {% else %}
+            Lean Validation Playbook
+          {% endif %}
           </div>
 
           <div class="toggle-menu bg-black bg-opacity-90 text-white h-24 w-full text-center absolute lottie-animation-hover bottom-0 left-0 right-0">
