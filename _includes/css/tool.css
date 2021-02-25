@@ -146,3 +146,8 @@
   letter-spacing: 0.2rem;
   font-size: 13px;
 }
+
+.appendix {
+  background-image: url(/images/bg-dark.svg);
+  background-size: cover;
+}
