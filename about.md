@@ -69,11 +69,11 @@ title: About
 
   <h5 class="info-heading">I membri del team</h5>
 
-  <p class="underline">Franceska Dalsaso - <i>UX Designer</i>&nbsp;&nbsp;<b>@Fightbean</b></p>
-  <p class="underline">Matteo Cavucci - <i>Consulente per lo sviluppo del prodotto digitale</i></p>
-  <p class="underline">Federica Pecoraro - <i>Founder e UX Lead</i>&nbsp;&nbsp;<b>@Fightbean</b></p>
-  <p class="underline">Mattia Carletti - <i>Design Lead</i>&nbsp;&nbsp;<b>@Fightbean</b></p>
-  <p class="underline">Christian Fei - <i>Developer</i></p>
+  <p class="underline"><a href="https://www.linkedin.com/in/franceskadalsaso/">Franceska Dalsaso - <i>UX Designer</i>&nbsp;&nbsp;<b>@Fightbean</b></a></p>
+  <p class="underline"><a href="https://www.linkedin.com/in/matteo-cavucci/">Matteo Cavucci - <i>Consulente per lo sviluppo del prodotto digitale</i></a></p>
+  <p class="underline"><a href="https://www.linkedin.com/in/federicapecoraro/">Federica Pecoraro - <i>Founder e UX Lead</i>&nbsp;&nbsp;<b>@Fightbean</b></a></p>
+  <p class="underline"><a href="https://www.linkedin.com/in/mattia-carletti-0a888a93/">Mattia Carletti - <i>Design Lead</i>&nbsp;&nbsp;<b>@Fightbean</b></a></p>
+  <p class="underline"><a href="https://cri.dev">Christian Fei - <i>Developer</i></a></p>
 
   <br>
 
