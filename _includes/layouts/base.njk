@@ -33,7 +33,7 @@
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" class="loading-overlay">
     <div class="overlay">
-      <img class="logo" src="/images/logo.svg">
+      <img class="logo h-14" src="/images/black-logo.svg">
       <div class="loading-progress"></div>
     </div>
     <div class="flex lg:flex-row flex-col h-screen w-full">
@@ -171,7 +171,7 @@
       setTimeout(() => {
         document.body.classList.remove('loading-overlay')
         document.querySelector('.overlay').remove()
-      }, 700)
+      }, 1000)
 
       const toggles = [...document.querySelectorAll('.toggle-menu')]
 
