@@ -9,18 +9,18 @@ permalink: tools/{{ tool.url }}
 
 
 <div class="mx-auto container max-w-5xl lg:px-12 px-6">
-  <lottie-player src="/animations/workshop-header-{{tool.normalized}}.json" class="mt-16 mb-10 tool-title" background="transparent"  speed="1" autoplay></lottie-player>
+  <lottie-player src="/animations/workshop-header-{{tool.normalized}}.json" class="mb-10 tool-title" background="transparent"  speed="1" autoplay></lottie-player>
 
   <div class="flex">
     <div class="lg:mr-4">
       <div class="lg:w-3/4">
-        <lottie-player src="/animations/{{tool.normalized}}.json" class="my-20 border border-black" background="transparent"  speed="1"  loop autoplay></lottie-player>
+        <lottie-player src="/animations/{{tool.normalized}}.json" class="mt-10 mb-20 border border-black" background="transparent"  speed="1"  loop autoplay></lottie-player>
         {{ tool['Descrizione di massima'] | safe }}
         {% usefulness tool %}
         {% todo tool %}
       </div>
     </div>
-    <div class="lg:block hidden" style="width: 60rem;">
+    <div class="lg:block hidden mt-5" style="width: 60rem;">
       {% info tool %}
       {% properties tool %}
     </div>
@@ -37,7 +37,7 @@ permalink: tools/{{ tool.url }}
   {% appendix tool %}
 </div>
 
-<div class="help-container mx-auto w-full text-center">
+<div class="help-container mx-auto w-full text-center py-40">
   <svg class="mx-auto" width="81" height="24" viewBox="0 0 81 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5 0C40.5 6.62742 34.9036 12 28 12C34.9036 12 40.5 17.3726 40.5 24C40.5 17.3726 46.0964 12 53 12C46.0964 12 40.5 6.62742 40.5 0Z" fill="#201D25"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M73 4C73 8.41828 69.4183 12 65 12C69.4183 12 73 15.5817 73 20C73 15.5817 76.5817 12 81 12C76.5817 12 73 8.41828 73 4Z" fill="#201D25"/>
@@ -51,7 +51,7 @@ permalink: tools/{{ tool.url }}
 {%- set previousTool = tools | previous(tool) -%}
 
 {% if nextTool %}
-<div class="text-center py-5 pb-48 lg:px-12 px-6">
+<div class="text-center py-5 pb-48">
   <h5 class="text-uppercase" style="font-size: 1rem">
     Prossimo workshop
   </h5>
