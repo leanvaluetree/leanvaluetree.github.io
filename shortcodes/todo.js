@@ -9,7 +9,7 @@ module.exports = function todo (tool) {
 
   return `
   <div class="todo">
-    <h3 class="uppercase">To-Do</h3>
+    <h3>To-do</h3>
     <p>
       ${tool['To-do'].replace(/- /gmi, bullet).replace(/\\n/gi, '<br/><br/>')}
     </p>
