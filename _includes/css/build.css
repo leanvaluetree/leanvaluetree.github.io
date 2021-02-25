@@ -1313,6 +1313,14 @@ video {
   height: 8rem;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
+.h-44 {
+  height: 11rem;
+}
+
 .h-48 {
   height: 12rem;
 }
