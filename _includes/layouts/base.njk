@@ -33,7 +33,7 @@
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" class="loading-overlay">
     <div class="overlay">
-      <img class="logo" src="/images/logo.svg">
+      <img class="logo h-14" src="/images/black-logo.svg">
       <div class="loading-progress"></div>
     </div>
     <div class="flex lg:flex-row flex-col h-screen w-full">
@@ -44,7 +44,6 @@
           </div>
 
           <div class="toggle-menu bg-black bg-opacity-90 text-white h-24 w-full text-center absolute lottie-animation-hover bottom-0 left-0 right-0">
-            {# <img src="/images/icon_menu.svg" alt="Menu" class="mx-auto h-6" /> #}
             <lottie-player src="/animations/menu.json" class="inline-block mx-auto mt-6 h-12 w-12" background="transparent"  speed="1" loop></lottie-player>
           </div>
         </div>
@@ -58,17 +57,16 @@
           </div>
 
           <div class="toggle-menu w-24 bg-black bg-opacity-90 text-white h-24 text-center lottie-animation-hover">
-            {# <img src="/images/icon_menu.svg" alt="Menu" class="mx-auto h-6" /> #}
             <lottie-player src="/animations/menu.json" class="inline-block mx-auto mt-6 h-12 w-12" background="transparent"  speed="1" loop></lottie-player>
           </div>
         </div>
       </div>
       <main class="h-screen w-full overflow-x-auto overflow-y-scroll">
-        <div class="relative {% if not nopad %} lg:px-12 px-6 {% endif %}">
+        <div class="relative ">
           {% if  page.url.startsWith('/tool') %}
-          <header class="mx-auto container pt-24 pb-2 max-w-5xl">
+          <header class="mx-auto container lg:px-12 px-6 pt-24 pb-2 max-w-5xl">
             <a href="/" class="text-dark uppercase small-label lottie-animation-hover">
-            <lottie-player src="/animations/arrow-back.json" class="inline-block w-8 mr-3 align-top" background="transparent"  speed="1" loop></lottie-player>
+            <lottie-player src="/animations/arrow-back.json" class="inline-block w-6 mr-2 align-top" background="transparent"  speed="1" loop></lottie-player>
             Tutti i workshop
             </a>
           </header>
@@ -76,23 +74,23 @@
           
           {% if page.url.startsWith('/tool') or page.url == '/' %}
           <div class="logo-wrapper">
-            <lottie-player src="/animations/logo-scroll.json" class="" background="transparent"  speed="1"  autoplay></lottie-player>
+            <lottie-player src="/animations/logo-scroll.json" class="" background="transparent"  speed="1" loop autoplay></lottie-player>
           </div>
           {% endif %}
 
-          <main id="content" class="mx-auto pt-5 {%if page.url == '/' %}  container  {% endif %} ">
+          <main id="content" class="mx-auto pt-5 {%if page.url == '/' %} container {% endif %} ">
             {{ content | safe }}
           </main>
         </div>
 
         {% if not page.url.startsWith('/tool') %}
-        <footer class="mx-auto">
+        <footer class="mx-auto text-pink">
           <lottie-player src="/animations/svs-scritta-loop.json" class="my-40" background="transparent"  speed="1"  autoplay></lottie-player>
 
-          <div class="pt-24 lg:px-12 text-lg bg-black bg-opacity-90 text-white ">
+          <div class="pt-24 lg:px-12 text-lg bg-black bg-opacity-90">
             <div class="lg:flex lg:flex-row pb-32 w-full lg:w-9/12 mx-auto">
               <div class="p-6">
-                <img src="/images/white-logo.svg" class="h-12 " />
+                <img src="/images/white-logo.svg" class="h-12" />
               </div>
               <div class="lg:flex-1 p-6 lg:px-24">
                 <p class="small-label uppercase text-gray-400">
@@ -106,9 +104,11 @@
                 <p class="small-label uppercase text-gray-400">
                 Indice
                 </p>
-                <p><a href="/" class="uppercase">Homepage</a></p>
-                <p><a href="/about" class="uppercase">About</a></p>
-                <p><a href="/metodo" class="uppercase">Lean Value Tree</a></p>
+                <p>
+                  <a href="/" class="small-label uppercase block mb-4">Homepage</a>
+                  <a href="/about" class="small-label uppercase block mb-4">About</a>
+                  <a href="/metodo" class="small-label uppercase block mb-4">Lean Value Tree</a>
+                </p>
               </div>
             </div>
             <hr>
@@ -131,7 +131,7 @@
     <div class="hidden w-full h-full fixed top-0 bottom-0 bg-white overflow-y-scroll" id="menu">
       <div class="w-full h-full bg">
         <div class="flex-1 flex items-center">
-          <div class="flex-1 pl-12">
+          <div class="flex-1 pl-12 font-bon-vivant">
             Lean Validation Playbook
           </div>
           <div class="toggle-menu w-20 py-8 text-center" id="close-menu">
@@ -142,13 +142,13 @@
         <div class="container mx-auto">
           <div class="lg:flex flex-row p-6 lg:p-16">
             <div class="flex-1 lg:px-12">
-              <a href="/" class="my-10 block">
+              <a href="/" class="my-16 h-32 block">
                 <lottie-player src="/animations/menu-home.json" background="transparent"  speed="1" autoplay></lottie-player>
               </a>
-              <a href="/about" class="my-10 block">
+              <a href="/about" class="my-16 h-32 block">
                 <lottie-player src="/animations/menu-about.json" background="transparent"  speed="1" autoplay></lottie-player>
               </a>
-              <a href="/metodo" class="my-10 block">
+              <a href="/metodo" class="my-16 h-32 block">
                 <lottie-player src="/animations/menu-metodo.json" background="transparent"  speed="1" autoplay></lottie-player>
               </a>              
             </div>
@@ -171,7 +171,7 @@
       setTimeout(() => {
         document.body.classList.remove('loading-overlay')
         document.querySelector('.overlay').remove()
-      }, 700)
+      }, 1000)
 
       const toggles = [...document.querySelectorAll('.toggle-menu')]
 

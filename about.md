@@ -1,17 +1,18 @@
 ---
 layout: layouts/base.njk
 title: About
-nopad: true
 ---
 
-<div class="py-24 xl:px-24 px-6 flex flex-row flex-wrap items-center">
-  <h1 class="m-0 flex-1 uppercase">{{title}}</h1>
+<div class="py-24 xl:px-24 px-6 flex flex-row flex-wrap">
+  <div class="flex-1">
+    <lottie-player src="/animations/header-about.json" class="max-w-xl" background="transparent"  speed="1" autoplay></lottie-player>
+  </div>
   <div class="lg:w-40 w-28 lg:block hidden">
     <lottie-player src="/animations/logo-scroll.json" class="" background="transparent"  speed="1" loop autoplay></lottie-player>
   </div>
 </div>
 
-<img class="w-full grayscale-image pt-5" src="/images/about-image-1.png"/>
+<img class="w-full pt-5" src="/images/about-image-1.jpg"/>
 
 <div class="page-container mx-auto max-w-4xl lg:px-8 px-6 py-28">
   <h4 class="text-center m-0">The Lean Validation Playbook è una raccolta di metodi per testare idee e soluzioni legate alla creazione di prodotti digitali e affronta il lato operativo che manca a molte strategie di business.</h4>
@@ -44,7 +45,7 @@ nopad: true
   </p>
 </div>
 
-<img class="my-28 w-full grayscale-image" src="/images/about-image-2.png"/>
+<img class="my-28 w-full" src="/images/about-image-2.jpg"/>
 
 <div class="page-container mx-auto max-w-3xl lg:px-12 px-6">
   <h5 class="info-heading">Riallineare aziende e team in un mondo in rapido cambiamento</h5 >
