@@ -3,8 +3,10 @@ layout: layouts/base.njk
 title: About
 ---
 
-<div class="py-24 xl:px-24 px-6 flex flex-row flex-wrap items-center">
-  <h1 class="m-0 flex-1 uppercase">{{title}}</h1>
+<div class="py-24 xl:px-24 px-6 flex flex-row flex-wrap">
+  <div class="flex-1">
+    <lottie-player src="/animations/header-about.json" class="max-w-xl" background="transparent"  speed="1" autoplay></lottie-player>
+  </div>
   <div class="lg:w-40 w-28 lg:block hidden">
     <lottie-player src="/animations/logo-scroll.json" class="" background="transparent"  speed="1" loop autoplay></lottie-player>
   </div>
