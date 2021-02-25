@@ -14,13 +14,13 @@ permalink: tools/{{ tool.url }}
   <div class="flex">
     <div class="lg:mr-4">
       <div class="lg:w-3/4">
-        <lottie-player src="/animations/{{tool.normalized}}.json" class="my-20 border border-black" background="transparent"  speed="1"  loop autoplay></lottie-player>
+        <lottie-player src="/animations/{{tool.normalized}}.json" class="mt-10 mb-20 border border-black" background="transparent"  speed="1"  loop autoplay></lottie-player>
         {{ tool['Descrizione di massima'] | safe }}
         {% usefulness tool %}
         {% todo tool %}
       </div>
     </div>
-    <div class="lg:block hidden" style="width: 60rem;">
+    <div class="lg:block hidden mt-5" style="width: 60rem;">
       {% info tool %}
       {% properties tool %}
     </div>
