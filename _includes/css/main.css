@@ -185,3 +185,7 @@ ul li {
 .info-heading {
   font-size: 36px;
 }
+
+.max-width-500 {
+  max-width: 500px;
+}
