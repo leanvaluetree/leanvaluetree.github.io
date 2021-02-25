@@ -156,7 +156,18 @@ img {
 }
 
 .min-height-tool-description {
-  min-height: 12em;
+  min-height: 16em;
+}
+
+@media all and (max-width: 1300px) {
+  .min-height-tool-description {
+    min-height: 20em;
+  }
+}
+@media all and (max-width: 800px) {
+  .min-height-tool-description {
+    min-height: 18em;
+  }
 }
 
 .grayscale-image {
