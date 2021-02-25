@@ -1,7 +1,6 @@
 ---
 layout: layouts/base.njk
 title: About
-nopad: true
 ---
 
 <div class="py-24 xl:px-24 px-6 flex flex-row flex-wrap items-center">

@@ -64,9 +64,9 @@
         </div>
       </div>
       <main class="h-screen w-full overflow-x-auto overflow-y-scroll">
-        <div class="relative {% if not nopad %} lg:px-12 px-6 {% endif %}">
+        <div class="relative ">
           {% if  page.url.startsWith('/tool') %}
-          <header class="mx-auto container pt-24 pb-2 max-w-5xl">
+          <header class="mx-auto container lg:px-12 px-6 pt-24 pb-2 max-w-5xl">
             <a href="/" class="text-dark uppercase small-label lottie-animation-hover">
             <lottie-player src="/animations/arrow-back.json" class="inline-block w-8 mr-3 align-top" background="transparent"  speed="1" loop></lottie-player>
             Tutti i workshop
@@ -80,7 +80,7 @@
           </div>
           {% endif %}
 
-          <main id="content" class="mx-auto pt-5 {%if page.url == '/' %}  container  {% endif %} ">
+          <main id="content" class="mx-auto pt-5 {%if page.url == '/' %} container {% endif %} ">
             {{ content | safe }}
           </main>
         </div>
