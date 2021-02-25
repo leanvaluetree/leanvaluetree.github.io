@@ -202,26 +202,33 @@ ul li {
 }
 
 
-
-
-body {
-  cursor: none;
+/* https://css-tricks.com/touch-devices-not-judged-size/ */
+@media (hover: hover) {
+  body {
+    cursor: none;
+  }
+  
+  body .cursor {
+    pointer-events: none;
+  }
+  body .cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 10000;
+  }
+  body .cursor__ball circle {
+    fill: #000;
+  }
+  
+  body .cursor__ball--small circle {
+    fill: #f7f8fa;
+  }
 }
 
-body .cursor {
-  pointer-events: none;
-}
-body .cursor__ball {
-  position: fixed;
-  top: 0;
-  left: 0;
-  mix-blend-mode: difference;
-  z-index: 10000;
-}
-body .cursor__ball circle {
-  fill: #000;
-}
-
-body .cursor__ball--small circle {
-  fill: #f7f8fa;
+@media (hover: none) {
+  body .cursor {
+    display: none;
+  }
 }
