@@ -191,6 +191,13 @@
       setTimeout(() => {
         document.body.classList.remove('loading-overlay')
         document.querySelector('.overlay').remove()
+
+        if (window.location.hash === '#contacts') {
+          const el = document.getElementById('contacts')
+          if (el && el.scrollIntoView) {
+            el.scrollIntoView()
+          }
+        }
       }, 1000)
 
       const toggles = [...document.querySelectorAll('.toggle-menu')]
