@@ -204,7 +204,7 @@ ul li {
 
 /* https://css-tricks.com/touch-devices-not-judged-size/ */
 @media (hover: hover) {
-  body {
+  body, body a {
     cursor: none;
   }
   

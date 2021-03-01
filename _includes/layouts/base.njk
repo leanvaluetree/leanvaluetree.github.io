@@ -36,7 +36,7 @@
       <img class="logo h-14" src="/images/black-logo.svg">
       <div class="loading-progress"></div>
     </div>
-    <div class="flex lg:flex-row flex-col h-screen w-full">
+    <div id="main" class="flex lg:flex-row flex-col h-screen w-full">
       <div class="hidden lg:block h-screen p-2 relative border-black border-r">
         <div class="w-20">
           <div class="font-bon-vivant transform rotate-vertical w-64 absolute top-0 left-0">
@@ -132,7 +132,7 @@
       </main>
     </div>
 
-    <div class="hidden w-full h-full fixed top-0 bottom-0 bg-white overflow-y-scroll" id="menu" style="z-index: 10">
+    <div id="menu" class="hidden w-full h-full">
       <div class="bg w-full">
         <div class="flex-1 flex items-center">
           <div class="flex-1 pl-12 font-bon-vivant">
@@ -215,7 +215,7 @@
           if (document.querySelector('#menu').classList.contains('hidden')) {
             document.querySelector('#menu').classList.remove('hidden')
             document.querySelector('#menu').classList.add('block')
-            document.querySelector('body').classList.add('overflow-hidden')
+            document.querySelector('#main').classList.add('hidden')
           }        
         })
       })
@@ -223,7 +223,7 @@
       closeMenu.addEventListener('click', () => {
         document.querySelector('#menu').classList.add('hidden')
         document.querySelector('#menu').classList.remove('block')
-        document.querySelector('body').classList.remove('overflow-hidden')
+        document.querySelector('#main').classList.remove('hidden')
       })
 
       const lottieMouseoverElements = [...document.querySelectorAll('.lottie-animation-hover')]
