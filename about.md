@@ -67,7 +67,7 @@ title: About
   Gli esperimenti che ti suggeriamo sono disegnati per raccogliere informazioni, imparando dai tuoi utenti per arrivare al passo successivo più consapevole di quando sei partito.
   </p>
 
-  <h5 class="info-heading">I membri del team</h5>
+  <h5 class="info-heading" id="contacts">I membri del team</h5>
 
   <p class="underline"><a href="https://www.linkedin.com/in/franceskadalsaso/">Franceska Dalsaso - <i>UX Designer</i>&nbsp;&nbsp;<b>@Fightbean</b></a></p>
   <p class="underline"><a href="https://www.linkedin.com/in/matteo-cavucci/">Matteo Cavucci - <i>Consulente per lo sviluppo del prodotto digitale</i></a></p>
