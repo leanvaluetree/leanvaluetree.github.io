@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Metodo
 ---
 
-<div class="py-24 xl:px-24 px-6 flex flex-row flex-wrap items-center">
+<div class="py-16 lg:py-24 xl:px-24 px-6 flex flex-row flex-wrap items-center">
   <div class="flex-1">
     <lottie-player src="/animations/header-metodo.json" class="max-w-xl" background="transparent"  speed="1" autoplay></lottie-player>
   </div>
