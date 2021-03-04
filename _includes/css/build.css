@@ -1325,6 +1325,10 @@ video {
   height: 12rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
