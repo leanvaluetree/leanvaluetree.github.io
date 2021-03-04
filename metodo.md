@@ -16,7 +16,7 @@ title: Metodo
 <div class="w-full block-50em ratio-4-3" style="background-image: url('/images/metodo-image-1.jpg')"></div>
 
 
-<div class="page-container mx-auto max-w-4xl lg:px-8 px-6 py-28">
+<div class="page-container mx-auto max-w-4xl lg:px-8 px-6 py-16">
   <h4 class="text-center m-0">Un framework per ripensare un prodotto esistente o per crearne uno nuovo, dedicando tempo ad esplorare problemi e soluzioni invece di convergere velocemente sull’idea più ovvia (o su quella preferita del boss). È  un metodo strutturato per orchestrare ad alto livello esperimenti sul prodotto che producano informazione e riducano l’incertezza.</h4>
 </div>
 
