@@ -2701,6 +2701,10 @@ video {
     margin-right: 1rem;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:mb-36 {
     margin-bottom: 9rem;
   }
