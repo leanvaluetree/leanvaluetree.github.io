@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Metodo
 ---
 
-<div class="py-24 xl:px-24 px-6 flex flex-row flex-wrap items-center">
+<div class="py-16 lg:py-24 xl:px-24 px-6 flex flex-row flex-wrap items-center">
   <div class="flex-1">
     <lottie-player src="/animations/header-metodo.json" class="max-w-xl" background="transparent"  speed="1" autoplay></lottie-player>
   </div>
@@ -12,9 +12,11 @@ title: Metodo
   </div>
 </div>
 
-<img class="w-full pt-5" src="/images/metodo-image-1.jpg  "/>
+<img class="w-full hidden-50em" src="/images/metodo-image-1.jpg"/>
+<div class="w-full block-50em ratio-4-3" style="background-image: url('/images/metodo-image-1.jpg')"></div>
 
-<div class="page-container mx-auto max-w-4xl lg:px-8 px-6 py-28">
+
+<div class="page-container mx-auto max-w-4xl lg:px-8 px-6 py-16">
   <h4 class="text-center m-0">Un framework per ripensare un prodotto esistente o per crearne uno nuovo, dedicando tempo ad esplorare problemi e soluzioni invece di convergere velocemente sull’idea più ovvia (o su quella preferita del boss). È  un metodo strutturato per orchestrare ad alto livello esperimenti sul prodotto che producano informazione e riducano l’incertezza.</h4>
 </div>
 

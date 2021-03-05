@@ -14,7 +14,7 @@ permalink: tools/{{ tool.url }}
   <div class="flex">
     <div class="lg:mr-4">
       <div class="lg:w-3/4">
-        <lottie-player src="/animations/{{tool.normalized}}.json" class="mt-10 mb-20 border border-black" background="transparent"  speed="1"  loop autoplay></lottie-player>
+        <lottie-player src="/animations/{{tool.normalized}}.json" class="mt-5 lg:mt-10 mb-20 border border-black" background="transparent"  speed="1"  loop autoplay></lottie-player>
         {{ tool['Descrizione di massima'] | safe }}
         {% usefulness tool %}
         {% todo tool %}
@@ -43,7 +43,8 @@ permalink: tools/{{ tool.url }}
     <path fill-rule="evenodd" clip-rule="evenodd" d="M73 4C73 8.41828 69.4183 12 65 12C69.4183 12 73 15.5817 73 20C73 15.5817 76.5817 12 81 12C76.5817 12 73 8.41828 73 4Z" fill="#201D25"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4C8 8.41828 4.41828 12 0 12C4.41828 12 8 15.5817 8 20C8 15.5817 11.5817 12 16 12C11.5817 12 8 8.41828 8 4Z" fill="#201D25"/>
   </svg>
-  <h3 class="mt-12 mb-8">Hai bisogno di aiuto?</h3>
+  {# <h3 class="mt-12 mb-8">Hai bisogno di aiuto?</h3> #}
+  <lottie-player src="/animations/hai-bisogno-di-aiuto.json" class="mt-12 mb-8 w-5/6 lg:w-3/4 mx-auto" background="transparent" speed="1" autoplay></lottie-player>
   <a href="/about/#contacts" class="contact-experts uppercase small-label font-bold">Contatta gli esperti</a>
 </div>
 
