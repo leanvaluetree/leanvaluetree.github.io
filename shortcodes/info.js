@@ -3,7 +3,7 @@ module.exports = function info (tool) {
   <div class="info ovh">
     <div class="py-3">
       <div class="small-label uppercase">Fase</div>
-      <div class="small">${tool.Fase}</div>
+      <div class="small">${tool['Fase dettaglio'].replace(/\\n/gi, '<br/>')}</div>
     </div>
     <div class="py-3">
       <div class="small-label uppercase">Dream team</div>
