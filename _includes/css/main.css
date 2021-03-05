@@ -183,10 +183,15 @@ ul {
   list-style-type: disc;
 }
 
+.list-with-arrows {
+  list-style-image: url('/images/arrow-list-item.svg');
+}
+
 ul li {
   margin-left: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  padding-left: 0.7em;
 }
 
 .small-label {
