@@ -139,7 +139,7 @@
     "Proprietà": "COST * SETUP TIME ** RUN TIME ** EVIDENCE STRENGTH **",
     "Prerequisiti necessari": "Una sequenza di argomenti e domande per condurre l'intervista. Durante la sessione, la conversazione può prendere direzioni diverse: avere uno script di partenza aiuta il ricercatore a ricordare gli aspetti chiave da esplorare",
     "Perfetto se...": "Vuoi comprendere i bisogni e i comportamenti degli utenti validando un'idea di prodotto o servizio prima di inziare la fase di progettazione. È utile all'inizio di un progetto per esplorare un tema o un problema che si vuole affrontare.",
-    "Fase": "Validare il problema, Validare l'idea",
+    "Fase": "Validare il problema, validare l'idea",
     "Metriche": "Al termine dell'attività di ricerca si analizzano le note e si individuano i pattern di comportamento emersi, i temi ricorrenti e i feedback condivisi dalla maggioranza dei partecipanti.",
     "Ti serviranno": "Uno script dell'intervista con le domande da porre all'intervistato, un excel/documento in cui raccogliere i feedback degli utenti. È inoltre consigliabile registrare (video/audio) le interviste in modo da poterle riguardare in seguito ed eventualmente integrare le annotazioni. In questo caso, ti servirà una liberatoria da far firmare agli intervistati.",
     "Esempi di tool": "Otter, PearNote, OBS project",
