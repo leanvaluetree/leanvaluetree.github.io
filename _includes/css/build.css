@@ -2616,6 +2616,13 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:flex-1 {
+    flex: 1 1 0%;
+  }
 }
 
 @media (min-width: 1024px) {

@@ -28,8 +28,13 @@ permalink: tools/{{ tool.url }}
 </div>
 
 <div class="mx-auto container lg:px-12 px-6 max-w-5xl lg:hidden block mt-16 pt-16 pb-16 border-black border-0 border-t">
-  {% info tool %}
-  {% properties tool %}
+  <div class="md:flex">
+    <div class="md:flex-1">
+      {% info tool %}
+    </div>
+    <div class="md:flex-1">
+      {% properties tool %}
+    </div>
 </div>
 
 
