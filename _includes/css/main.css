@@ -60,7 +60,6 @@ h1, h2, h3, h4, h5, h6 {font-family: "BonVivant";}
   display: inline-block;
   height: 1px;
   width: 40px;
-  margin-right: 1em;
   background-color: #201D25;
   vertical-align: super;
   transform: rotateZ(90deg);
