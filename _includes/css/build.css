@@ -2635,6 +2635,11 @@ video {
   .md\:flex-1 {
     flex: 1 1 0%;
   }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 }
 
 @media (min-width: 1024px) {

@@ -22,7 +22,7 @@ title: Metodo
 
 <hr class="border border-black border-t border-b-0 mb-24"/>
 
-<div class="page-container mx-auto max-w-3xl lg:px-12 px-6">
+<div class="page-container mx-auto max-w-3xl md:px-24 px-12">
   <h5 class="info-heading">Da “possiamo farlo?” a “dovremmo farlo?”</h5>
 
   <p>
