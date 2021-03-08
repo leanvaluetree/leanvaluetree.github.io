@@ -16,7 +16,7 @@ title: About
 <div class="w-full block-50em ratio-4-3" style="background-image: url('/images/about-image-1.jpg')"></div>
 
 <div class="page-container mx-auto max-w-4xl lg:px-8 px-6 py-16">
-  <h4 class="text-center m-0">The Lean Validation Playbook è una raccolta di metodi per testare idee e soluzioni legate alla creazione di prodotti digitali e affronta il lato operativo che manca a molte strategie di business.</h4>
+  <h4 class="text-center m-0 mobile-heading">The Lean Validation Playbook è una raccolta di metodi per testare idee e soluzioni legate alla creazione di prodotti digitali e affronta il lato operativo che manca a molte strategie di business.</h4>
 </div>
 
 <hr class="border border-black border-t border-b-0 mb-24"/>
