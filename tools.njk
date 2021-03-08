@@ -61,7 +61,7 @@ permalink: tools/{{ tool.url }}
 {%- set previousTool = tools | previous(tool) -%}
 
 {% if nextTool %}
-<div class="text-center py-5 pb-48">
+<div class="text-center py-5 pb-64">
   <h5 class="text-uppercase" style="font-size: 1rem">
     Prossimo workshop
   </h5>
@@ -73,6 +73,6 @@ permalink: tools/{{ tool.url }}
   <h5 class="text-uppercase mt-12" style="font-size: 1rem">
     Scroll to discover
   </h5>
-  <div class="nextpage-trigger py-3" data-url="/tools{{nextTool.url}}"></div>
 </div>
+<div class="nextpage-trigger py-3" data-url="/tools{{nextTool.url}}"></div>
 {% endif %}
