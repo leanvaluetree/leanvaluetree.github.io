@@ -21,7 +21,7 @@ title: About
 
 <hr class="border border-black border-t border-b-0 mb-24"/>
 
-<div class="page-container mx-auto max-w-3xl md:px-24 px-12">
+<div class="page-container mx-auto max-w-3xl md:px-24 px-8">
 
   <h5 class="info-heading">Prendere decisioni è fare una scommessa sul futuro</h5 >
 
@@ -49,7 +49,7 @@ title: About
 <img class="my-28 hidden-50em w-full" src="/images/about-image-2.jpg"/>
 <div class="my-28 w-full block-50em ratio-4-3" style="background-image: url('/images/about-image-2.jpg')"></div>
 
-<div class="page-container mx-auto max-w-3xl md:px-24 px-12">
+<div class="page-container mx-auto max-w-3xl md:px-24 px-8">
   <h5 class="info-heading">Riallineare aziende e team in un mondo in rapido cambiamento</h5 >
 
   <p>
