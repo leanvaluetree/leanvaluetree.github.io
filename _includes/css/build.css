@@ -2644,6 +2644,11 @@ video {
     flex: 1 1 0%;
   }
 
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -2651,6 +2656,10 @@ video {
 
   .md\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
   }
 }
 
