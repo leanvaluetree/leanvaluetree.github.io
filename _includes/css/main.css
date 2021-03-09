@@ -28,6 +28,7 @@ body {
 body, .bg {
   background-image: url(/images/bg.svg);
   background-size: cover;
+  background-color: #F4EEF7;
 }
 
 h1, h2, h3, h4, h5, h6 {font-family: "BonVivant";}
