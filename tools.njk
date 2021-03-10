@@ -12,7 +12,7 @@ permalink: tools/{{ tool.url }}
   <lottie-player src="/animations/workshop-header-{{tool.normalized}}.json" class="mb-10 tool-title" background="transparent"  speed="1" autoplay></lottie-player>
 
   <div class="flex">
-    <div class="lg:mr-4">
+    <div class="lg:mr-4 w-full">
       <div class="lg:w-3/4">
         <div class="mt-5 lg:mt-10 mb-20 border border-black">
           <lottie-player src="/animations/{{tool.normalized}}.json" preserveAspectRatio="xMaxYMax slice" class="lottie-margin" background="transparent"  speed="1"  loop autoplay></lottie-player>
@@ -22,7 +22,7 @@ permalink: tools/{{ tool.url }}
         {% todo tool %}
       </div>
     </div>
-    <div class="lg:block hidden mt-5" style="width: 60rem;">
+    <div class="lg:block hidden mt-5" style="width: 250px;">
       {% info tool %}
       {% properties tool %}
     </div>
