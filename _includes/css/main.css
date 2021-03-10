@@ -231,6 +231,11 @@ ul li {
   body .cursor__ball--small circle {
     fill: #f7f8fa;
   }
+
+  .lottie-margin {
+    margin-bottom: -10px;
+  }
+
 }
 
 @media (hover: none) {
