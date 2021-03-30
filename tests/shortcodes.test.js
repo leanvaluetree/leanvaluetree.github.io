@@ -8,20 +8,20 @@ test('properties of tool', t => {
   const result = shortcodes.properties(tool)
   t.is(result, `
   <div class="properties ovh">
-    <div class="property half">
-      <div class="property-name">COST</div>
+    <div class="property py-3">
+      <div class="small-label">COST</div>
       <div class="property-count"><div class="filled-circle"></div><div class="filled-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div></div>
     </div>
-    <div class="property half">
-      <div class="property-name">SETUP TIME</div>
+    <div class="property py-3">
+      <div class="small-label">SETUP TIME</div>
       <div class="property-count"><div class="filled-circle"></div><div class="filled-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div></div>
     </div>
-    <div class="property half">
-      <div class="property-name">RUN TIME</div>
+    <div class="property py-3">
+      <div class="small-label">RUN TIME</div>
       <div class="property-count"><div class="filled-circle"></div><div class="filled-circle"></div><div class="filled-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div></div>
     </div>
-    <div class="property half">
-      <div class="property-name">EVIDENCE STRENGTH</div>
+    <div class="property py-3">
+      <div class="small-label">EVIDENCE STRENGTH</div>
       <div class="property-count"><div class="filled-circle"></div><div class="filled-circle"></div><div class="filled-circle"></div><div class="empty-circle"></div><div class="empty-circle"></div></div>
     </div>
   </div>
@@ -35,7 +35,7 @@ test('usefulness of tool', t => {
   const result = shortcodes.usefulness(tool)
   t.is(result, `
   <div class="usefulness">
-    <h3 class="uppercase">Perfetto se...</h3>
+    <h3>Perfetto se</h3>
     <p>
       Voglio essere sicuro che ogni cambiamento introdotto all'interno del mio prodotto/servizio introduca risultati positivi misurabili rispetto alla versione esistente.
     </p>
@@ -50,10 +50,10 @@ test('todo of tool', t => {
   const result = shortcodes.todo(tool)
   t.is(result, `
   <div class="todo">
-    <h3 class="uppercase">To-Do</h3>
-    <p>
-      1. Identifica la metrica che vuoi monitorare<br/>  2. Scegli il tool che più si adatta alle tue esigenze<br/>  3. Configura e testa il tool<br/>  4. Lancia il tuo A/B test<br/>  5. Monitora il test nel tempo<br/>  6. Scegli la versione più performante
-    </p>
+    <h3>To-do</h3>
+    <ul class="list-with-arrows">
+      <li>1. Identifica la metrica che vuoi monitorare</li><li>  2. Scegli il tool che più si adatta alle tue esigenze</li><li>  3. Configura e testa il tool</li><li>  4. Lancia il tuo A/B test</li><li>  5. Monitora il test nel tempo</li><li>  6. Scegli la versione più performante</li>
+    </ul>
   </div>
   `.trim())
 })
@@ -67,7 +67,8 @@ test('info of tool', t => {
     Proprietà: 'COST ** SETUP TIME ** RUN TIME *** EVIDENCE STRENGTH ***',
     'Prerequisiti necessari': 'Versione online del prodotto/servizio che vuoi testare.',
     'Perfetto se...': "\"Voglio essere sicuro che ogni cambiamento introdotto all'interno del mio prodotto/servizio introduca risultati positivi misurabili rispetto alla versione esistente.\"  \"Sei indeciso tra due varianti (due messaggi, due concept etc.)\"",
-    Fase: 'Validare la soluzione',
+    Fase: 'Soluzione',
+    'Fase dettaglio': 'Validare la soluzione',
     Metriche: 'Visite uniche, click through rate, conversioni (es. numero di download, numero di iscrizioni, etc)',
     'Ti serviranno': 'Software per automatizzare A/B test. Esistono anche varianti con composer visivi in cui non serve sviluppare codice.',
     'Esempi di tool': 'Instapage, Optimizely, A/B Tasty, Adobe Target',
@@ -81,37 +82,21 @@ test('info of tool', t => {
   const result = shortcodes.info(tool)
   t.is(result, `
   <div class="info ovh">
-    <div class="half">
-      <div class="small uppercase mb-small">Anche conosciuto come</div>
-      <div class="small">Split Testing, Bucket Testing</div>
+    <div class="py-3">
+      <div class="small-label uppercase">Fase</div>
+      <div class="small">Validare la soluzione</div>
     </div>
-    <div class="half">
-      <div class="small uppercase mb-small">Prerequisiti</div>
-      <div class="small">Versione online del prodotto/servizio che vuoi testare.</div>
-    </div>
-    <div class="half">
-      <div class="small uppercase mb-small">Esempi di tool</div>
-      <div class="small">Instapage, Optimizely, A/B Tasty, Adobe Target</div>
-    </div>
-    <div class="half">
-      <div class="small uppercase mb-small">Dream team</div>
+    <div class="py-3">
+      <div class="small-label uppercase">Dream team</div>
       <div class="small">Developer, Designer, PO/PM </div>
     </div>
-    <div class="half">
-      <div class="small uppercase mb-small">Ti serviranno</div>
-      <div class="small">Software per automatizzare A/B test. Esistono anche varianti con composer visivi in cui non serve sviluppare codice.</div>
+    <div class="py-3">
+      <div class="small-label uppercase">AKA</div>
+      <div class="small">Split Testing, Bucket Testing</div>
     </div>
-    <div class="half">
-      <div class="small uppercase mb-small">Metriche</div>
-      <div class="small">Visite uniche, click through rate, conversioni (es. numero di download, numero di iscrizioni, etc)</div>
-    </div>
-    <div class="half">
-      <div class="small uppercase mb-small">Difficoltà maggiori</div>
-      <div class="small">Identificazione metrica adeguata. Settaggio tool dedicato.</div>
-    </div>
-    <div class="half">
-      <div class="small uppercase mb-small">Fase</div>
-      <div class="small">Validare la soluzione</div>
+    <div class="py-3">
+      <div class="small-label uppercase">Prerequisiti</div>
+      <div class="small">Versione online del prodotto/servizio che vuoi testare.</div>
     </div>
   </div>
   `.trim())
