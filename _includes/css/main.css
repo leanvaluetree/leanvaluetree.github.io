@@ -270,3 +270,53 @@ h1, h2, h3, h4, h5 {
     font-size: 1.8em;
   }
 }
+
+
+body #iubenda-cs-banner {
+  background-color: rgba(0,0,0,var(--tw-bg-opacity)) !important;
+}
+body #iubenda-cs-banner #iubenda-cs-title {
+  font-family: "NeueHaas" !important;
+}
+
+body #iubenda-cs-banner #iubenda-cs-title {
+  font-family: "BonVivant" !important;
+  font-size: 26px !important;
+}
+
+body #iubenda-cs-banner .iubenda-cs-rationale {
+  padding: 2em !important;
+}
+body #iubenda-cs-banner .iubenda-cs-opt-group {
+  flex-wrap: wrap-reverse !important;
+}
+
+body #iubenda-cs-banner .iubenda-cs-opt-group-consent {
+  display: block !important;
+  width: 100% !important;  
+}
+
+body #iubenda-cs-banner .iubenda-cs-opt-group-custom {
+  display: block !important;
+  width: 100% !important;
+}
+body #iubenda-cs-banner .iubenda-cs-opt-group button {
+  display: block !important;
+  width: 100% !important;
+  letter-spacing: 0.08rem !important;
+  text-transform: uppercase !important;
+  font-weight: 400 !important;
+  padding: 1em 0 !important;
+}
+body #iubenda-cs-banner .iubenda-cs-btn-primary {
+  width: 50% !important;
+  background: none !important;
+  test: foo;
+}
+body #iubenda-cs-banner .iubenda-cs-container {
+  cursor: default !important;
+  position: fixed !important;
+  bottom: 1em !important;
+  right: 1em !important;
+  max-width: 400px !important;
+}
