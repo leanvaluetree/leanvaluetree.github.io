@@ -101,18 +101,17 @@ img {
   }
 }
 
-
-.loading-overlay {
+:not(.no-js).loading-overlay {
   height: 100vh;
   width: 100vw;
 }
-.loading-overlay > * {
+:not(.no-js).loading-overlay > * {
   display: none;
 }
 .overlay {
   display: none;
 }
-.loading-overlay > .overlay {
+:not(.no-js).loading-overlay > .overlay {
   display: block !important;
   position: fixed;
   top: 0;
@@ -201,11 +200,18 @@ ul li {
   max-width: 500px;
 }
 
+.no-js .nextpage {
+  display: none;
+}
+
 
 /* https://css-tricks.com/touch-devices-not-judged-size/ */
 @media (hover: hover) {
-  body, body a {
+  body:not(.no-js), body:not(.no-js) a {
     cursor: none;
+  }
+  body.no-js .cursor {
+    display: none;
   }
   
   body .cursor {

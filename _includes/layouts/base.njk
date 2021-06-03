@@ -40,7 +40,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
   </head>
-  <body itemscope itemtype="http://schema.org/WebPage" class="loading-overlay">
+  <body itemscope itemtype="http://schema.org/WebPage" class="loading-overlay no-js">
     <div class="overlay">
       <img class="logo h-14" src="/images/black-logo.svg">
       <div class="loading-progress"></div>
@@ -209,6 +209,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       if (window.location.host == host && window.location.protocol != 'https:') {
         window.location.protocol = 'https:'
       }
+
+      document.body.classList.remove('no-js')
 
 
       setTimeout(() => {
