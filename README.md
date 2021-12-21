@@ -1,19 +1,19 @@
 # Lean Value Tree
 
 
-install dependencies
+Istruzione: install dependencies
 
 ```
 npm install
 ```
 
-development on `localhost:8080`
+Istruzione: development on `localhost:8080`
 
 ```
 npm start
 ```
 
-build
+Istruzione: build
 
 ```
 npm run build
@@ -32,10 +32,14 @@ COME AGGIORNARE LE SCHEDE DEI DIVERSI TOOL:
 
 5. Fai ctrl+c e in seguito "npm start". Aspetta che il terminale faccia la sua magia, copia-incolla l'indirizzo local host sul tuo browser e accertati che le modifiche integrate siano corrette
 
-6. Apri GitHub Desktop e nel pannello in basso a sinista, nel campo "Summary", descrivi brevemente che tipo di modifica hai effettuato e premi su "Commit to main"
+6. Apri GitHub Desktop e nel pannello in basso a sinistra, nel campo "Summary", descrivi brevemente che tipo di modifica hai effettuato e premi su "Commit to main"
 
 7. Pigia i tasti blu che compaiono finché non hai più nulla da premere: nel caso in cui ci siano delle modifiche apportate da altri, il tool scarica in automatico gli aggiornamenti in modo che non ci siano conflitti e altre amenità
 
 8. Fatto! Controlla su leanvaluetree.it che le tue modifiche siano state integrate. Potrebbe volerci un attimo. Per scrupolo aggiorna la pagina "Svuotando la cache e ricaricando manualmente"
 
 ```
+
+COME AGGIORNARE LE ANIMAZIONI IN COPERTINA / TITOLI ANIMATI ALL'INTERNO DELLE SCHEDE
+
+Per aggiornare le copertine/titoli/footer: posizionati in _site/animations e inserisci il json dell'animazione chiamandolo con in nome del tool. Aggiungi poi l'animazione header chiamandola "workshop-header-nome del tool" e infine quella di footer chiamandola "workshop-loop-nome del tool" (istruzione da verificare).
