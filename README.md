@@ -31,7 +31,7 @@ COME AGGIORNARE LE SCHEDE DEI DIVERSI TOOL:
 4. Da terminale, posizionati nella cartella di progetto (leanvaluetree.github.io) e fai partire lo script "./scripts/generate-tools-from-tsv.js"
 
 5. Carica le animazioni dei tool caricati: per ogni tool è necessaria l'immagine di copertina (nome-tool.json), il titolo (workshop-header-nome-tool.json) e la scritta in loop (workshop-loop-nome-tool.json).
-Gli asset vanno caricati nella cartella _site/animations
+Gli asset vanno caricati nella cartella _site/animations e _animations
 
 6. Fai ctrl+c e in seguito "npm start". Aspetta che il terminale faccia la sua magia, copia-incolla l'indirizzo local host sul tuo browser e accertati che le modifiche integrate siano corrette
 
