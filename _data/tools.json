@@ -270,32 +270,9 @@
     "Difficoltà maggiori": "Per quanto possa sembrare semplice, creare un video di qualità richiede competenze specifiche: assicurati di avere il team giusto per far sì che questo esperimento sia un successo.",
     "Anteprima": "Comunica la tua idea di business tramite un video promozionale e monitora la reazione del tuo target.",
     "Storia / esempio": "",
-    "Potrebbe interessarti anche": "\r",
+    "Potrebbe interessarti anche": "",
     "normalized": "explainer-video",
     "image": "explainer-video.svg",
     "url": "/explainer-video/"
-  },
-  {
-    "ID": "15",
-    "Nome tool": "Online Ad",
-    "Anche conosciuto come": "-",
-    "Descrizione di massima": "Questo esperimento è ideale per misurare su larga scala l'interesse nella tua value proposition. Si tratta di una pubblicità online che espone in maniera chiara e ad un segmento specifico di clientela la tua value proposition e misura il tasso di conversione tramite una semplice CTA.",
-    "Proprietà": "COST *** SETUP TIME ** RUN TIME *** EVIDENCE STRENGTH ***",
-    "Prerequisiti necessari": "Avrai bisogno di un punto di atterraggio per gli utenti che avranno cliccato sulla campagna. Nella maggior parte dei casi si tratterà di una landing page. Le piattaforme di advertising sono diventate sempre più stringenti: assicurati di rispettarne tutti i criteri e requisiti affinché la campagna superi il processo di approvazione.",
-    "Perfetto se...": "Vuoi misurare l'interesse di una specifica audience per la tua value proposition.",
-    "Fase": "Idea, soluzione",
-    "Fase dettaglio": "Validare l'idea\\n Validare la soluzione",
-    "Metriche": "Numero di visualizzazioni uniche, numero di click sulla CTA, clickthrough rate.",
-    "Ti serviranno": "Gestire una campagna di ADS digitali è oggi abbastanza semplice e non richiede skill tecniche particolari. Le piattaforme hanno procedure di inserimento guidate che ti supporteranno passo passo nella pubblicazione e gestione. Dovrai però essere in grado di creare una campagna che traduca bene la tua value proposition e abbia una CTA efficace, e di impostare correttamente la tua target audience.",
-    "Esempi di tool": "Facebook Business Manager",
-    "To-do": "- Definisci su quale piattaforma (social o di ricerca) vuoi lanciare la tua campagna, imposta la target audience, la lunghezza e il budget, definendo il \"cost per click\"\\n  - Crea la tua offerta: definisci un testo chiaro e in linea con la tua value proposition e, se la piattaforma lo permette, aggiungi del contenuto visivo per rafforzare il tuo statement. Ricordati di includere l'URL di atterraggio alla tua landing page\\n  - Lancia la tua campagna sulla piattaforma social scelta e monitora giornalmente le performance (numero di visualizzazioni, numero di click sull'ad, commenti, share, etc.)\\n  - Se stai spendendo tanto a fronte di un bassa clickthrough rate (numero di click sull'annuncio diviso per il numero di volte in cui viene visualzzato), metti in pausa la campagna, itera immagini e testo, poi falla ripartire\\n",
-    "Dream team": "Copywriter, graphic designer, marketing expert.",
-    "Difficoltà maggiori": "Raggiungere una target audience specifica non è semplice, ma è possibile farlo con creatività e resilienza. Insieme al tuo team, puoi fare brainstorming su dove pensi sia più facile raggiungere la tua audience online e individuare così i canali su cui fare i primi test.",
-    "Anteprima": "Testa la tua value proposition con una campagna digitale. La creatività, l'efficacia della CTA e il raggiungimento della tua target audience saranno fondamentali per il successo della campagna.",
-    "Storia / esempio": "",
-    "Potrebbe interessarti anche": "",
-    "normalized": "online-ad",
-    "image": "online-ad.svg",
-    "url": "/online-ad/"
   }
 ]
